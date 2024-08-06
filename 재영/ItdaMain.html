@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITDA</title>
+</head>
+<body>
+
+    <h1>ITDA</h1> 
+
+    <header>
+        <img src="ITDA로고 사진." alt="ITDA 로고">
+        <a href="/login">로그인</a>
+        <div>
+            <form action="/search" method="get">
+                <input type="text" name="query" placeholder="ITDA">
+                <button type="submit">🔍</button>
+            </form>
+        </div>
+        <nav>
+            <button type="button" class="searchAcademy" onclick="location.href='/academy-search'">학원검색</button>
+            <button type="button" class="community" onclick="location.href='/community'">커뮤니티</button>
+            <button type="button" class="notices" onclick="location.href='/notices'">공지사항</button>
+            <button type="button" class="myPick" onclick="location.href='/my-pick'">마이픽</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="recommendAcademy">
+            <h2>학원들을 ITDA</h2>
+            <a href="/all-academies">더보기</a>
+            <div class="recommendAcademyList">
+                <ul>
+                    <li>
+                        <a href="/academy/1">IT 개발자로 가는 JAVA 프로그래밍 기초
+                        <dt>
+                            <dd>역삼 그린 컴퓨터 아카데미</dd>
+                            <dd>#SW 엔지니어링</dd>
+                            <dd>교육장소: 오프라인</dd>
+                            <dd>강남구</dd>
+                            <dd>개강일: 24.09.02</dd> 
+                        </dt>
+                    </a></li>
+                    <li><a href="/academy/2">IT 개발자를 가는 JAVA 프로그래밍 기초
+                        <dt>
+                            <dd>역삼 그린 컴퓨터 아카데미</dd>
+                            <dd>#SW 엔지니어링</dd>
+                            <dd>교육장소: 오프라인</dd>
+                            <dd>강남구</dd>
+                            <dd>개강일: 24.09.02</dd> 
+                        </dt>
+                    </a></li>
+                    <li><a href="/academy/3">IT 개발자로 가는 JAVA 프로그래밍 기초
+                        <dt>
+                            <dd>역삼 그린 컴퓨터 아카데미</dd>
+                            <dd>#SW 엔지니어링</dd>
+                            <dd>교육장소: 오프라인</dd>
+                            <dd>강남구</dd>
+                            <dd>개강일: 24.09.02</dd> 
+                        </dt>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="popularAcademy">
+            <h2>인기학원을 ITDA</h2>
+            <a href="/all-popular-academies">더보기</a>
+            <div class="popularAcademyList">
+                <ul>
+                    <li><a href="/popular-academy/1">
+                        <img src="학원 이미지" alt="인기 학원 이미지 1">
+                        <span>IT 개발자로 가는 JAVA 프로그래밍 기초</span>
+                    </a></li>
+                    <li><a href="/popular-academy/2">
+                        <img src="학원 이미지" alt="인기 학원 이미지 2">
+                        <span>IT 개발자로 가는 JAVA 프로그래밍 기초</span>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="community">
+            <h2>커뮤니티를 ITDA</h2>
+            <a href="/all-community-posts">더보기</a>
+            <div class="communityPosts"></div>
+            <ul>
+                <li><a href="/community-post/1">부트캠프 추천 좀 해주세요
+                    <dt>
+                        <dd>작성자: 이름없는소년</dd>
+                        <dd>약 25분전</dd>
+                        <dd>댓글 수: 9개</dd>
+                        <dd>좋아요 수: 12개</dd>
+                        <dd>조회수: 128개</dd>
+                    </dt>
+                </a></li>
+                <li><a href="/community-post/2">json 파싱 문의
+                    <dt>
+                        <dd>작성자: 커린이</dd>
+                        <dd>약 8분전</dd>
+                        <dd>댓글 수: 5개</dd>
+                        <dd>좋아요 수: 0개</dd>
+                        <dd>조회수: 57개</dd>
+                    </dt> 
+                </a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>소식들을 ITDA</h2>
+            <a href="/all-news">더보기</a>
+            <ul>
+                <li><a href="/news/1">AI 시대 우리는 살아남을 수 있을까?
+                <img src="기사 사진" alt="기사 사진">
+                <span>블라블라블라</span>
+                </a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="/community">커뮤니티</a>
+            <a href="/kookbiAcademy">국비학원</a>
+            <a href="/Home">홈</a>
+            <a href="/myPick">마이픽</a>
+            <a href="/myPage">마이페이지</a>
+        </nav>
+    </footer>
+</body>
+</html>
