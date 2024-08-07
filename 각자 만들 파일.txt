@@ -1,0 +1,4 @@
+재영 : info
+경민 : 검색창
+원호 : review
+도형 : detail
