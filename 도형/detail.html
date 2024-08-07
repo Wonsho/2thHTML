@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>학원상세정보</h1>
+    <header>
+        <div>
+            <button type="button" class="backPage" onclick="history.back()">← 이전</button>
+        </div>
+        <div>
+            <img src="ITDA로고 사진." alt="ITDA 로고">
+        </div>
+        <div>
+            <a href="/login">로그인</a>
+        </div>
+        <section>
+            <div>
+                <img src="" alt="우수훈련기관 아이콘">
+                우수훈련기관입니다
+            </div>
+            <h1>AI활용 빅데이터 분석 및 응용 소프트웨어 개발자</h1>
+            <div>오프라인</div>
+            <dl>
+                <dt>홍대학원</dt>
+                <dd><a href=""> http://jongro.greenart.co.kr/</a></dd>
+                <dd>
+                    서울특별시 종로구 수표로96
+                    <a href="">지도보기</a>
+                </dd>
+                <dd>
+                    <span class="rating">★★★☆☆</span>
+                    <button onclick="addToMyPick()">♡</button>
+                </dd>
+            </dl>
+            <nav>
+                <ul>
+                    <li><button type="button" class="basicInfo" onclick="showInfo('basic')">기본정보</button></li>
+                    <li><button type="button" class="detailInfo" onclick="showInfo('detail')">상세정보</button></li>
+                    <li><button type="button" class="academyInfo" onclick="showInfo('institution')">훈련기관정보</button></li>
+                    <li><button type="button" class="reviewInfo" onclick="showInfo('reviews')">훈련 후기</button></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section>
+            <h1>강의상세정보</h1>
+            <dl>
+                <dt>안내사항</dt>
+                <dd>해당정보가 없어요</dd>
+            </dl>
+            <dl>
+                <dt>강사명</dt>
+                <dd>해당정보가 없어요</dd>
+            </dl>
+            <dl>
+                <dt>훈련교재</dt>
+                <dd>이재현 절대강좌 유디티</dd>
+            </dl>
+            <dl>
+                <dt>훈련시설</dt>
+                <dd>해당정보가 없어요</dd>
+            </dl>
+        </section>
+        <section>
+            <h1>인기학원을 ITDA</h1>
+            <div>
+                <a href="/all-popular-academies">더보기</a>
+            </div>
+            <ul>
+                <li><a href="/popular-academy/1">
+                    <img src="학원 이미지" alt="인기 학원 이미지 1">
+                    <span>IT 개발자로 가는 JAVA 프로그래밍 기초</span>
+                </a></li>
+                <li><a href="/popular-academy/2">
+                    <img src="학원 이미지" alt="인기 학원 이미지 2">
+                    <span>IT 개발자로 가는 JAVA 프로그래밍 기초</span>
+                </a></li>
+            </ul>
+        </section>
+    </main>
+    <nav>
+        <h1>하단바</h1>
+        <ul>
+            <li><a href="/community">커뮤니티</a></li>
+            <li><a href="/kookbiAcademy">국비학원</a></li>
+            <li><a href="/Home">홈</a></li>
+            <li><a href="/myPick">마이픽</a></li>
+            <li><a href="/myPage">마이페이지</a></li>
+        </ul>
+    </nav>
+<footer>주식회사ITDA</footer>
+</body>
+</html>
