@@ -10,27 +10,35 @@
     <h1>ITDA</h1> 
 
     <header>
-        <img src="ITDA로고 사진." alt="ITDA 로고">
-        <a href="/login">로그인</a>
         <div>
-            <form action="/search" method="get">
-                <input type="text" name="query" placeholder="ITDA">
-                <button type="submit">🔍</button>
-            </form>
+            <img src="ITDA로고 사진." alt="ITDA 로고">
         </div>
-        <nav>
-            <button type="button" class="searchAcademy" onclick="location.href='/academy-search'">학원검색</button>
-            <button type="button" class="community" onclick="location.href='/community'">커뮤니티</button>
-            <button type="button" class="notices" onclick="location.href='/notices'">공지사항</button>
-            <button type="button" class="myPick" onclick="location.href='/my-pick'">마이픽</button>
-        </nav>
+        <div>
+            <a href="/login">로그인</a>
+        </div>
+
+
+        <form action="/search" method="get">
+            <label><input type="text" name="query" placeholder="ITDA">검색</label>
+            <button type="submit">검색</button>
+        </form>
+
     </header>
+
+    <nav>
+        <h1>검색</h1>
+        <button type="button" class="searchAcademy" onclick="location.href='/academy-search'">학원검색</button>
+        <button type="button" class="community" onclick="location.href='/community'">커뮤니티</button>
+        <button type="button" class="notices" onclick="location.href='/notices'">공지사항</button>
+        <button type="button" class="myPick" onclick="location.href='/my-pick'">마이픽</button>
+    </nav>
 
     <main>
         <section class="recommendAcademy">
-            <h2>학원들을 ITDA</h2>
+            <h1>학원들을 ITDA</h1>
+            <div>
             <a href="/all-academies">더보기</a>
-            <div class="recommendAcademyList">
+            </div>
                 <ul>
                     <li>
                         <a href="/academy/1">IT 개발자로 가는 JAVA 프로그래밍 기초
@@ -61,7 +69,6 @@
                         </dt>
                     </a></li>
                 </ul>
-            </div>
         </section>
 
         <section class="popularAcademy">
@@ -118,8 +125,7 @@
             </ul>
         </section>
     </main>
-
-    <footer>
+    <aside>
         <nav>
             <a href="/community">커뮤니티</a>
             <a href="/kookbiAcademy">국비학원</a>
@@ -127,6 +133,9 @@
             <a href="/myPick">마이픽</a>
             <a href="/myPage">마이페이지</a>
         </nav>
+    </aside>
+
+    <footer>
     </footer>
 </body>
 </html>
