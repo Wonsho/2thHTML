@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>학원 정보창</h1>
+<header>
+    <div>
+        <button type="button" class="backPage" onclick="history.back()">← 이전</button>
+    </div>
+    <div>
+        <img src="ITDA로고 사진." alt="ITDA 로고">
+    </div>
+    <div>
+        <a href="/login">로그인</a>
+    </div>
+    <section class="mainHeader">
+        <div>오프라인</div>
+        <h1>AI 활용 빅데이터 분석 및 응용 소프트웨어 개발자</h1>
+        <dl>
+            <dt>홍대학원</dt>
+            <dd>
+                <span class="rating">★★★☆☆</span>
+                <button onclick="addToMyPick()">♡</button>
+            </dd>
+        </dl>
+        <nav>
+            <ul>
+                <li><button type="button" class="basicInfo" onclick="showInfo('basic')">기본정보</button></li>
+                <li><button type="button" class="detailInfo" onclick="showInfo('detail')">상세정보</button></li>
+                <li><button type="button" class="academyInfo" onclick="showInfo('institution')">훈련기관정보</button></li>
+                <li><button type="button" class="reviewInfo" onclick="showInfo('reviews')">훈련 후기</button></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<main>
+    <section id="reviewInfo">
+        <h1>훈련후기</h1>
+
+        5
+        회차
+
+        <section>
+            <h1>평균점수</h1>
+            <h2>3.5</h2>
+            <dl>
+                <dt>5</dt>
+                <dd>10</dd>
+                <dt>4</dt>
+                <dd>5</dd>
+                <dt>3</dt>
+                <dd>27</dd>
+                <dt>2</dt>
+                <dd>10</dd>
+                <dt>1</dt>
+                <dd>9</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h1>만족도</h1>
+            <table>
+                <caption>만족도 표</caption>
+                <tr>
+                    <th>~만족도</th>
+                    <th>~만족도</th>
+                    <th>~만족도</th>
+                    <th>~만족도</th>
+                    <th>~만족도</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </section>
+    </section>
+
+    <section>
+        <h1>학원 후기글</h1>
+        <dl>
+            <dt>평점 낮은 회차 후기</dt>
+            <dd>학원이 너무 시설이 않좋아요.</dd>
+            <dd>학원이 너무 시설이 않좋아요.</dd>
+            <dt>평점 높은 회차 후기</dt>
+            <dd>학원이 너무 시설이 좋아요.</dd>
+            <dd>학원이 너무 시설이 좋아요.</dd>
+        </dl>
+    </section>
+
+    <section class="popularAcademy">
+        <h1>인기학원을 ITDA</h1>
+        <div>
+            <a href="/all-popular-academies">더보기</a>
+        </div>
+        <ul>
+            <li><a href="/popular-academy/1">
+                <img src="학원 이미지" alt="인기 학원 이미지 1">
+                <span>IT 개발자로 가는 JAVA 프로그래밍 기초</span>
+            </a></li>
+            <li><a href="/popular-academy/2">
+                <img src="학원 이미지" alt="인기 학원 이미지 2">
+                <span>IT 개발자로 가는 JAVA 프로그래밍 기초</span>
+            </a></li>
+        </ul>
+    </section>
+
+</main>
+
+<nav>
+    <h1>하단바</h1>
+    <ul>
+        <li><a href="/community">커뮤니티</a></li>
+        <li><a href="/kookbiAcademy">국비학원</a></li>
+        <li><a href="/Home">홈</a></li>
+        <li><a href="/myPick">마이픽</a></li>
+        <li><a href="/myPage">마이페이지</a></li>
+    </ul>
+</nav>
+
+<footer>주식회사 </footer>
+
+</body>
+</html>
