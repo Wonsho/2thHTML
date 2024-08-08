@@ -1,4 +1,4 @@
-재영 : info
-경민 : 검색창
-원호 : review
-도형 : detail
+재영 : /login, /idfind,/numcheck,/idcheck
+경민 : /pwfind,/pwcheck,/pwreset,/join
+원호 : /join/num,/joinwelcome,/my,/myhelp
+도형 : /my/letter(팝업창까지), /modify(팝업창까지)
