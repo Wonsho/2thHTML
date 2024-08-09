@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>계정정보 찾기</h1>
+    <header>
+    <div> 
+        <a href="/idcheck">뒤로가기</a>
+    </div>
+    <nav>
+        <h1>아이디 및 비밀번호찾기</h1>
+        <ul>
+            <li>아이디 찾기</li>
+            <li><button type="botton" onclick="">비밀번호 찾기</button></li>
+        </ul>
+    </nav>
+
+    <div>비밀번호를 찾을 방법을 선택해주세요</div>
+
+    </header> 
+
+    <main>
+            <div>
+                <h2>이메일로 찾는 방법</h2>
+            </div>
+            <div>
+                <input type = "radio">이메일로 찾기
+            </div>
+            <div>
+                <input type="text" placeholder="아이디를 입력해주세요">
+                </div>
+                <div>
+                <input type="email" placeholder="이메일을 입력해주세요">
+            </div>
+            
+        <div>
+            <label>자동 로그인 방지</label>
+            <div class="captcha">
+                <div class="captcha_child">
+                    <img id="captchaImg" title="캡쳐 이미지" src="/??/getCaptchaImg" alt="캡쳐 이미지">
+                    <div id="captchaAudio" style="display: none;"></div>
+        </div>
+
+        <div class="">
+            <a class="refreshBtn" id="audio">
+                <i class="" aria-hidden="true"></i>음성듣기
+            </a>
+            <a class="refreshBtn" id="refreshImg">
+                <i class="" aria-hidden="true"></i>새로고침
+            </a>
+          </div>
+          <div>
+            <input type="text" id="answer" value="위에 보이는 문자를 입력해주세요"/>
+          </div>
+            </div>
+            <button id="check">인증번호 받기</button>
+          </div>
+    </main>
+ 
+    <nav>
+        <h1>하단바</h1>
+        <ul>
+            <li><a href="/community">커뮤니티</a></li>
+            <li><a href="/kookbiAcademy">국비학원</a></li>
+            <li><a href="/Home">홈</a></li>
+            <li><a href="/myPick">마이픽</a></li>
+            <li><a href="/myPage">마이페이지</a></li>
+        </ul>
+    </nav>
+
+    <footer></footer>
+</body>
+</html>
