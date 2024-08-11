@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+body {
+    margin-right: 14px;
+    margin-left: 14px;
+}
+#title {
+    color: #3E68FF;
+}
+
+.search-box {
+    height: 30px;
+    width: 300px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    border: 1px solid #3E68FF;
+    
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    font-size: 16px;
+    line-height: 30px;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.hide { 
+    clear: both;
+    border: none;
+    background: none;
+    display: none;
+}
+
+.search-btn {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 100%;
+    border-radius: 30px;
+    background: white;
+    border: none;
+    display: flex;
+}
+
