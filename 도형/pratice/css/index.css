@@ -1,0 +1,309 @@
+@import url(style.css);
+
+h1.main-title{
+    color : #3f69ff;
+    font-size: 40px;
+    padding:  10px;
+    font-weight: bold;
+    margin-top: 10px;
+    
+   
+
+}
+.login{
+   font-size: 20px;
+   color: black;
+   font-weight: normal;
+   position :absolute;
+   right :10px;
+   top: 40px;
+   text-decoration: none;
+}
+
+h1.search{
+    display: none;
+}
+
+#container{
+    width: 300px;
+    height: 40px;
+    position: relative;
+    left :40px;
+    display: flex;
+    
+    
+}
+
+#container input{
+      width: 100%;
+      border-radius: 15px;
+       
+}
+#container button{
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    border: none;
+    background-color: white;
+    
+
+}
+
+h1.top-menu{
+    display: none;
+}
+
+.top-menu_link{
+    color: gray;
+    text-decoration: none;
+    font-size: 12px;
+}
+.top-list{
+    list-style:none;
+    display: flex;
+}
+.search-menu{
+    display: block; 
+    margin-top: 5px; 
+    font-size: 14px;
+}
+.top-menu_img{
+    display: block; 
+    margin: 0 auto;
+}
+.top-menu_list{
+    margin: 10px;
+}
+.more{
+    font-size: 20px;
+    color: gray;
+    position: relative;
+    left: 300px;
+    bottom: 50px;
+    text-decoration: none;
+    
+}
+
+h1.title{
+    font-size: 25px;
+}
+
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.list-data{
+    border: 1px solid #919191;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 360px;
+    height: 120px;
+    margin-bottom: 20px;
+    
+    
+}
+.class-name{
+    position: relative;
+    bottom: 17px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    overflow: hidden;
+    font-size: 17px;
+}
+.day{
+    position: relative;
+    left: 280px;
+    bottom: 40px;
+    text-align: center;
+    border: 2px solid #3f69ff; 
+    background-color: #3f69ff; 
+    padding: 5px; 
+    font-size: 12px;
+    border-radius: 8px;
+    color: white;
+    box-sizing: border-box;
+    width: 40px;
+    height: 25px;
+    border-style: hidden;
+
+}
+.link{
+    
+}
+.data1{
+    font-size: 14px;
+    position: relative;
+    bottom: 40px;
+    color: black;
+
+    right : 10px;
+}
+.data2{
+    font-size: 11px;
+    color: #919191;
+    position: relative;
+    left: 200px;
+    bottom: 55px;
+}
+.data3{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    right : 10px;
+    bottom: 30px;
+}
+.data4{
+    color: #FFB23E;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    bottom: 48px;
+    left: 50px;
+}
+.data5{
+    color: black;
+    font-size: 11px;
+    position: relative;
+    bottom: 63px;
+    left: 100px;
+}
+.data6{
+    position: relative;
+    bottom: 83px;
+    left: 180px;
+    width: 96px;
+    height: 96px;
+    background-image: url(../image/star_24dp_CBFF3C_FILL1_wght400_GRAD0_opsz24.svg);
+    background-repeat: repeat-x;
+    background-size: 24px 24px;
+    
+}
+.data7{
+    position: relative;
+    bottom: 179px;
+    left: 277px;
+    background-repeat: none;
+    
+}
+.data8{
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    bottom: 180px;
+    right: 10px;
+}
+.data9{
+    position: relative;
+    bottom: 200px;
+    left: 270px;
+}
+.aca-img{
+    width: 177px;
+    height: 145px;
+}
+.aca-title{
+    display: block; 
+    margin-top: 5px; 
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+    
+}
+.aca-subtitle{
+    font-size: 14px;
+    font-weight: lighter;
+    color: black;
+}
+.aca-location{
+    font-size: 14px;
+    font-weight: lighter;
+    color: #919191;
+}
+.aca-list{
+    margin-right: 20px;
+}
+.cumminty-list{
+    border: 2px solid #919191;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 360px;
+    height: 100px;
+    
+    
+}
+.c-data1{
+    position: relative;
+    bottom: 15px;
+    right: 35px;
+}
+.c-data2{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    bottom: 40px;
+    right: 10px;
+}
+.underbar-del{
+    text-decoration: none;
+}
+.c-data3{
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    bottom: 60px;
+    left: 120px;
+}
+.c-data4{
+    position: relative;
+    bottom: 75px;
+    left: 200px;
+}
+.c-data5{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    bottom: 105px;
+    left: 230px;
+}
+.c-data6{
+    position: relative;
+    bottom: 130px;
+    left: 260px;
+}
+.c-data7{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    bottom: 157px;
+    left: 285px;
+}
+.c-data8{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    bottom: 130px;
+    right: 30px;
+}
+.c-data9{
+    position: relative; 
+    bottom: 140px;
+    left: 250px;
+}
+.c-data10{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    bottom: 170px;
+    left: 280px;
+}
