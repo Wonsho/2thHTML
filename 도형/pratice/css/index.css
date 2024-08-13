@@ -14,37 +14,40 @@ h1.main-title{
    font-size: 20px;
    color: black;
    font-weight: normal;
-   position :absolute;
-   right :10px;
-   top: 40px;
+   /* position :absolute; */
+   position: relative;
+   right: -305px;
+   /* left: 50; */
+   top: -75px;
    text-decoration: none;
 }
 
 h1.search{
     display: none;
+    border-color: #3f69ff;
 }
 
 #container{
+    border-color: #3f69ff;
     width: 300px;
     height: 40px;
     position: relative;
     left :40px;
     display: flex;
-    
-    
 }
 
-#container input{
-      width: 100%;
-      border-radius: 15px;
-       
+#container input{   
+    border-color: #3f69ff;
+    width: 100%;
+    border-radius: 20px;
 }
 #container button{
     position: absolute;
-    top: 5px;
+    top: 7px;
     bottom: 5px;
     right: 5px;
     border: none;
+    border-radius: 20px;
     background-color: white;
     
 
@@ -106,7 +109,8 @@ h1.title{
 }
 .class-name{
     position: relative;
-    bottom: 17px;
+    left: 5px;
+    bottom: 15px;
     font-size: 15px;
     font-weight: bold;
     color: black;
@@ -115,14 +119,14 @@ h1.title{
 }
 .day{
     position: relative;
-    left: 280px;
-    bottom: 40px;
+    left: 279px;
+    bottom: 39px;
     text-align: center;
     border: 2px solid #3f69ff; 
     background-color: #3f69ff; 
     padding: 5px; 
     font-size: 12px;
-    border-radius: 8px;
+    border-radius: 0px 8px 0px 8px; /*내가변경*/
     color: white;
     box-sizing: border-box;
     width: 40px;
@@ -136,24 +140,23 @@ h1.title{
 .data1{
     font-size: 14px;
     position: relative;
-    bottom: 40px;
     color: black;
-
-    right : 10px;
+    right : 30px;
+    bottom: 35px;
 }
 .data2{
     font-size: 11px;
     color: #919191;
     position: relative;
-    left: 200px;
-    bottom: 55px;
+    left: 196px;
+    bottom: 52px;
 }
 .data3{
     color: black;
     font-size: 14px;
     font-weight: bold;
     position: relative;
-    right : 10px;
+    right : 30px;
     bottom: 30px;
 }
 .data4{
@@ -162,19 +165,19 @@ h1.title{
     font-size: 14px;
     position: relative;
     bottom: 48px;
-    left: 50px;
+    left: 35px;
 }
-.data5{
+.data5{ 
     color: black;
     font-size: 11px;
     position: relative;
-    bottom: 63px;
-    left: 100px;
+    bottom: 65px;
+    left: 94px;
 }
 .data6{
     position: relative;
-    bottom: 83px;
-    left: 180px;
+    bottom: 84px;
+    left: 183px;
     width: 96px;
     height: 96px;
     background-image: url(../image/star_24dp_CBFF3C_FILL1_wght400_GRAD0_opsz24.svg);
@@ -184,8 +187,8 @@ h1.title{
 }
 .data7{
     position: relative;
-    bottom: 179px;
-    left: 277px;
+    bottom: 180px;
+    left: 280px;
     background-repeat: none;
     
 }
@@ -195,12 +198,12 @@ h1.title{
     font-size: 14px;
     position: relative;
     bottom: 180px;
-    right: 10px;
+    right: 30px;
 }
 .data9{
     position: relative;
     bottom: 200px;
-    left: 270px;
+    left: 280px;
 }
 .aca-img{
     width: 177px;
