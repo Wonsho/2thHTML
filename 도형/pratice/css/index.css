@@ -61,6 +61,7 @@ h1.top-menu{
     color: gray;
     text-decoration: none;
     font-size: 12px;
+    
 }
 .top-list{
     list-style:none;
@@ -309,4 +310,59 @@ h1.title{
     position: relative;
     bottom: 170px;
     left: 280px;
+}
+.news-img{
+    width: 385px;
+    height: 202px;
+    margin-left: 10px;
+}
+.news-title{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.underbar{
+    display: none;
+}
+.underbar-menu{
+    list-style:none;
+    display: flex;
+    margin-left: -30px;
+    border: solid 1px gray;
+    border-bottom: hidden;
+    border-right: hidden;
+    border-left: hidden;
+    
+}
+
+.underbar-menu_list{
+    margin: 10px;
+}
+.underbar-list{
+    display: block;
+    color: black;
+    font-size: 14px;
+    
+
+     
+}
+.underbar-menu_list_home{
+    border: solid 1px #3f69ff;
+    background-color: #3f69ff;
+    height: 60px;
+    width: 60px;
+    border-radius: 8px;
+    position: relative;
+    
+}
+.underbar-home{
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    margin-left: 10px;
+    
+    
 }
