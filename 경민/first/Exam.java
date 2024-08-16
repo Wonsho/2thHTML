@@ -12,7 +12,6 @@ public class Exam {
         //파일을 읽기위한 스캐너 객체를 만듬
         Scanner scan = new Scanner(fis);
 
-        
             scan.nextLine();
       
             String line = scan.nextLine();
