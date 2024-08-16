@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITDA</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <!-- 구글 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,650;1,535&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <p>ITDA</p>
+        </div>
+        <form action="/search" method="get" class="search-form">
+            <input type="text" name="query" placeholder="ITDA 검색">
+            <button type="submit">검색</button>
+        </form>
+        <div class="login">
+            <a href="/login">로그인</a>
+        </div>
+    </header>
+
+    <nav class="top-nav">
+        <ul>
+            <li><button type="button" class="searchAcademy" onclick="location.href='/academy-search'" img="">학원검색</button></li>
+            <li><button type="button" class="community" onclick="location.href='/community'">커뮤니티</button></li>
+            <li><button type="button" class="notices" onclick="location.href='/notices'">공지사항</button></li>
+            <li><button type="button" class="myPick" onclick="location.href='/my-pick'">마이픽</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="recommendAcademy">
+            <h1>학원들을 ITDA <a href="/all-academies">더보기</a></h1>
+            <ul>
+                <li>
+                    <a href="/academy/1">
+                        <h2>IT 개발자로 가는 JAVA 프로그래밍 기초</h2>
+                        <dl>
+                            <dd>역삼 그린 컴퓨터 아카데미</dd>
+                            <dd>#SW 엔지니어링</dd>
+                            <dd>교육장소: 오프라인</dd>
+                            <dd>강남구</dd>
+                            <dd>개강일: 24.09.02</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="/academy/2">
+                        <h2>IT 개발자를 가는 JAVA 프로그래밍 기초</h2>
+                        <dl>
+                            <dd>역삼 그린 컴퓨터 아카데미</dd>
+                            <dd>#SW 엔지니어링</dd>
+                            <dd>교육장소: 오프라인</dd>
+                            <dd>강남구</dd>
+                            <dd>개강일: 24.09.02</dd> 
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="/academy/3">
+                        <h2>IT 개발자로 가는 JAVA 프로그래밍 기초</h2>
+                        <dl>
+                            <dd>역삼 그린 컴퓨터 아카데미</dd>
+                            <dd>#SW 엔지니어링</dd>
+                            <dd>교육장소: 오프라인</dd>
+                            <dd>강남구</dd>
+                            <dd>개강일: 24.09.02</dd> 
+                        </dl>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="popularAcademy">
+            <h1>인기학원을 ITDA <a href="/all-popular-academies">더보기</a></h1>
+            <ul>
+                <li>
+                    <a href="/popular-academy/1">
+                        <img src="학원이미지1.jpg" alt="인기 학원 이미지 1">
+                        <span>IT 개발자로 가는 JAVA 프로그래밍 기초</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/popular-academy/2">
+                        <img src="학원이미지2.jpg" alt="인기 학원 이미지 2">
+                        <span>IT 개발자로 가는 JAVA 프로그래밍 기초</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="community">
+            <h1>커뮤니티를 ITDA <a href="/all-community-posts">더보기</a></h1>
+            <ul>
+                <li>
+                    <a href="/community-post/1">
+                        <h2>부트캠프 추천 좀 해주세요</h2>
+                        <dl>
+                            <dd>작성자: 이름없는소년</dd>
+                            <dd>약 25분전</dd>
+                            <dd>댓글 수: 9개</dd>
+                            <dd>좋아요 수: 12개</dd>
+                            <dd>조회수: 128개</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="/community-post/2">
+                        <h2>json 파싱 문의</h2>
+                        <dl>
+                            <dd>작성자: 커린이</dd>
+                            <dd>약 8분전</dd>
+                            <dd>댓글 수: 5개</dd>
+                            <dd>좋아요 수: 0개</dd>
+                            <dd>조회수: 57개</dd>
+                        </dl>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="news">
+            <h1>소식들을 ITDA <a href="/all-news">더보기</a></h1>
+            <ul>
+                <li>
+                    <a href="/news/1">
+                        <img src="기사사진.jpg" alt="기사 사진">
+                        <div>
+                            <h2>AI 시대 우리는 살아남을 수 있을까?</h2>
+                            <p>블라블라블라</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <nav class="bottom-nav">
+        <a href="/community">
+            <img src="community-icon.png" alt="커뮤니티 아이콘">
+            <span>커뮤니티</span>
+        </a>
+        <a href="/kookbiAcademy">
+            <img src="academy-icon.png" alt="국비학원 아이콘">
+            <span>국비학원</span>
+        </a>
+        <a href="/main">
+            <img src="home-icon.png" alt="홈 아이콘">
+            <span>홈</span>
+        </a>
+        <a href="/myPick">
+            <img src="mypick-icon.png" alt="마이픽 아이콘">
+            <span>마이픽</span>
+        </a>
+        <a href="/myPage">
+            <img src="mypage-icon.png" alt="마이페이지 아이콘">
+            <span>마이페이지</span>
+        </a>
+    </nav>
+
+    <footer>
+        <p>주식회사 잇다아아아</p>
+    </footer>
+</body>
+</html>
