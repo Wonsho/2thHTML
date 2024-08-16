@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  /* 전체 페이지 스타일 */
  body {
      font-family: 'Noto Sans KR', sans-serif;
@@ -258,3 +259,257 @@
          width: 200px;
      }
  }
+=======
+/* 전체 페이지 스타일 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 로고 */
+header p{
+    font-family: 'Lora';
+    font-size: 30px;
+    color: #4285f4;
+}
+
+/* 검색창 */
+header form {
+    display: flex;
+    align-items: center;
+}
+
+header input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 300px;
+}
+
+/* 검색 버튼 */
+header button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* 로그인 */
+header a {
+    text-decoration: none;
+    color: #4285f4;
+}
+
+
+/* 상단 메뉴 스타일 */
+nav {
+    background-color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+/* 메인 컨텐츠 스타일 */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 섹션 공통 스타일 */
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section h1 a {
+    font-size: 14px;
+    color: #4285f4;
+    text-decoration: none;
+}
+
+/* 학원 리스트 스타일 */
+.recommendAcademy ul, .popularAcademy ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.recommendAcademy li, .popularAcademy li {
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 250px;
+}
+
+.recommendAcademy a, .popularAcademy a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.2s;
+}
+
+.recommendAcademy a:hover, .popularAcademy a:hover {
+    transform: translateY(-5px);
+}
+
+.recommendAcademy dl, .popularAcademy dl {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+.recommendAcademy dd, .popularAcademy dd {
+    margin: 5px 0;
+}
+
+/* 인기 학원 스타일 */
+.popularAcademy img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* 커뮤니티 스타일 */
+.community ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.community li {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.community a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.community dl {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.community dd {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* 소식 섹션 스타일 */
+.news ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.news li {
+    margin-bottom: 20px;
+}
+
+.news a {
+    display: flex;
+    text-decoration: none;
+    color: #333;
+}
+
+.news img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+/* 하단 네비게이션 스타일 */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-nav img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+/* 푸터 스타일 */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #666;
+    font-size: 14px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .recommendAcademy li, .popularAcademy li {
+        flex: 1 1 100%;
+    }
+    
+    header input[type="text"] {
+        width: 200px;
+    }
+}
+>>>>>>> 3fee67cd4dcf572f3f42acee2ff348002400b5ec
