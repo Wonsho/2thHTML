@@ -1,0 +1,93 @@
+:where(
+    .n-icon\:back
+
+
+)::before{
+    flex-shrink: 0;
+
+    content:"";
+    display:inline-flex;
+    width:24px;
+    height:24px;
+    overflow: hidden;
+    text-indent: -999px;
+    mask-size:24px;
+}
+
+
+/* ITDA로고 */
+.logo{
+    color:#3E68FF;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* MBTI 테스트화면 */
+.test{
+    /* display: flex;
+    justify-content: center; */
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("/css/image/bear.png");
+    background-image: no-repeat;
+    background-size: 100% 100%;
+    /* display: inline-flex; */
+    width: 60px;
+    height: 60px;
+    padding:10px;
+    text-indent: -999px;
+}
+
+/* MBTI 텍스트 */
+.test-text{
+    
+    text-align: center;
+    padding:10px 10px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+/* 테스트 시작하기 버튼 */
+.test-btn{
+    border: 1px solid var(--color-base-3,blue);
+    border-radius: 10px;
+    background-color: #3E68FF;
+    color:white;
+    padding:10px 80px;
+    font-weight: bold;
+    display:inline-flex;
+    text-decoration: none;
+    
+}
+
+.tab-bar-color:hover{
+    background-color: white;
+    
+}
+
+.tab-bar-color:hover::before {
+    background-color: #3E68FF;
+}
+
+.tab-bar{
+    margin-bottom: 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-color{
+    box-shadow: 0 -10px 5px rgba(0, 0, 0, 0.1);
+}

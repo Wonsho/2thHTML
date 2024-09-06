@@ -1,0 +1,139 @@
+
+    .bar-icon\:community,
+    .bar-icon\:academy,
+    .bar-icon\:home,
+    .bar-icon\:login,
+    .bar-icon\:mypic
+   
+{
+    --icon-width:32px;
+    --icon-color:black;
+    --deco-gap:0px;
+    display:inline-flex;
+    width: var(--icon-width);
+    height: var(--icon-width);
+    /* overflow: hidden; */
+    align-items: center;
+    gap: var(--deco-gap);
+     text-decoration: none;
+     display: inline-flex;
+    flex-direction: column;
+    width:auto;
+    font-size: 15px;
+}
+ 
+:is(
+        .bar-icon\:community,
+        .bar-icon\:academy,
+        .bar-icon\:home,
+        .bar-icon\:login,
+        .bar-icon\:mypic,
+        .icon\:back
+        
+)::before {
+    flex-shrink: 0;
+
+    content: "";
+    display: inline-flex;
+    width: var(--icon-width);
+    height: var(--icon-width);
+    /* inherit = 부모랑 같이하겠다 */
+    overflow: hidden;
+    text-indent: -999px;
+    /* background-image: url("/image/icon/home.svg"); */
+    background-color: var(--icon-color);
+    background-repeat: no-repeat;
+    mask-size: var(--icon-width);
+    
+}
+/* ==icon======================================== */
+.icon\:back::before{
+    background-image: url("/css/image/icon/back.svg");
+}
+
+.bar-icon\:home{
+    overflow: hidden;
+    text-indent: -999px;
+}
+.bar-icon\:community::before {
+    mask-image: url("/css/image/icon/chat.svg");
+   
+}
+
+.bar-icon\:academy::before{
+    mask-image: url("/css/image/icon/eyes.svg");
+}
+
+.bar-icon\:home::before{
+    mask-image: url("/css/image/icon/home.svg");
+    
+    
+}
+
+.bar-icon\:mypic::before {
+    mask-image: url("/css/image/icon/heart.svg");
+}
+
+.bar-icon\:login::before {
+    mask-image: url("/css/image/icon/login.svg");
+   
+}
+
+.bar-icon-font\:size{
+   font-size : 15px;
+}
+
+
+.n-deco {
+    width: auto;
+}
+
+ .n-btn {
+     border: 1px solid var(--color-base-3, white);
+     border-radius: 10px;
+     padding: 12px;
+   
+     display: inline-flex;
+     background-color: #334DCF;
+     /* flex = 안쪽에정렬할수있을때 */
+ }
+
+
+ /* ========color================================ */
+ .icon-color\:main-1{
+    --icon-color: var(--color-main-2,white);
+ }
+
+/* ====font==================================== */
+
+
+.text-size\:1 {
+   font-weight: normal;
+}
+
+.text-size\:2 {
+    font-weight: bold;
+}
+
+/* =====font-color================================= */
+.font-color\:1{
+    color:rgba(0, 0, 0, 0.418);
+}
+
+/* =======font-size============================== */
+
+.font-size\:1{
+    font-size:24px;
+}
+
+.font-size\:2 {
+    font-size: 32px;
+}
+
+.font-size\:3 {
+    font-size: 40px;
+}
+
+.font-size\:3 {
+    font-size: 48px;
+}
