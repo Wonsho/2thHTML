@@ -13,27 +13,32 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: 'Lora';
 }
 
 /* 로고 */
-header p{
-    font-family: 'Lora';
+header h1{
     font-size: 30px;
     color: #4285f4;
+    
+    
 }
 
 /* 검색창 */
 header form {
     display: flex;
-    align-items: center;
+   
 }
 
 header input[type="text"] {
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 20px;
-    width: 300px;
+    width: 500px;
+    height: 25px;
+    margin-top: 70px;
 }
 
 /* 검색 버튼 */
@@ -45,12 +50,13 @@ header button {
     border-radius: 20px;
     margin-left: 10px;
     cursor: pointer;
+    margin-top: 70px;
 }
 
 /* 로그인 */
 header a {
     text-decoration: none;
-    color: #4285f4;
+    color: black;
 }
 
 
@@ -65,6 +71,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    
     padding: 0;
     margin: 0;
 }
@@ -75,6 +82,21 @@ nav button {
     cursor: pointer;
     font-size: 16px;
     color: #333;
+}
+.top-menu_img{
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+    
+    
+}
+.top-menu-list{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* 메인 컨텐츠 스타일 */
@@ -95,7 +117,7 @@ section {
 
 section h1 {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,6 +128,10 @@ section h1 a {
     color: #4285f4;
     text-decoration: none;
 }
+section dt{
+    font-size: 20px;
+}
+
 
 /* 학원 리스트 스타일 */
 .recommendAcademy ul, .popularAcademy ul {
@@ -146,7 +172,8 @@ section h1 a {
 
 /* 인기 학원 스타일 */
 .popularAcademy img {
-    width: 100%;
+    width: 530px;
+    height: 300px;
     border-radius: 8px;
     margin-bottom: 10px;
 }
@@ -203,6 +230,11 @@ section h1 a {
     border-radius: 8px;
 }
 
+.news-title{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
 /* 하단 네비게이션 스타일 */
 .bottom-nav {
     position: fixed;
@@ -214,6 +246,7 @@ section h1 a {
     justify-content: space-around;
     padding: 10px 0;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 0px;
 }
 
 .bottom-nav a {
@@ -250,3 +283,4 @@ footer {
         width: 200px;
     }
 }
+

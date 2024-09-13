@@ -1,0 +1,44 @@
+InstBaseInfo:
+addr1: ���명�밸��� ��珥�援� ��珥�4��
+addr2: 1308-25 媛���O/T 306-311,902,905-907,1109,1112,1117
+filePath: http://www.hrd.go.kr/comm/com/fileDownload.do?athfilId=14915832&athfilSeqNo=1
+hpAddr: www.lyzeum.com
+inoNm: �쇱�댁�������援��≪��
+instIno: 2001054296600
+instPerTrco: 990000
+ncsCd: 20010404
+ncsNm: IT媛�由�
+ncsYn: Y
+nonNcsCoursePrcttqTime: 0
+nonNcsCourseTheoryTime: 42
+pFileName: �쇱�댁����몃��遺�濡�怨�.jpg
+perTrco: 681860
+torgParGrad: 3
+trDcnt: 19
+traingMthCd: M1001
+trprChap: 源�醫���
+trprChapEmail: jskim@lyzeum.com
+trprChapTel: 02-537-7144
+trprDegr: 2
+trprGbn: C0061
+trprId: AIG20230000422651
+trprNm: ��蹂댁���ㅽ��媛�由ъ�� 痍⑤�� ��湲곗���� 以�鍮�怨쇱��
+trprTarget: C0031
+trprTargetNm: 洹쇰���
+trprUpYn: 
+trtm: 103
+zipCd: 137855
+
+InstDetailInfo:
+govBusiNm: �듯�⑹�ъ�ш낵������
+torgGbnCd: C0061
+totTraingDyct: 19
+totTraingTime: 103
+totalCrsAt: 681860
+trprDegr: 2
+trprId: AIG20230000422651
+trprNm: ��蹂댁���ㅽ��媛�由ъ�� 痍⑤�� ��湲곗���� 以�鍮�怨쇱��
+
+InstFacilityDetailInfoList:
+
+InstEqpmDetailInfoList:

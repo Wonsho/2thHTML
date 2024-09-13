@@ -1,0 +1,33 @@
+package org.example.test.wons.first.helper.entity.processinfo;
+
+public enum InstBaseInfoParam {
+    J주소지,
+    S상세주소,
+    P파일경로,
+    H홈페이지주소,
+    H훈련기관명,
+    H훈련기관코드,
+    S실제훈련비,
+    NCS코드,
+    NCS명,
+    NCS여부,
+    B비NCS교과실기시간,
+    B비NCS교과이론시간,
+    L로고파일명,
+    J정부지원금,
+    P평가등급,
+    C총훈련일수,
+    H훈련방법코드,
+    D담당자명,
+    D담당자이메일,
+    D담당자전화번호,
+    H훈련과정회차,
+    H훈련과정구분,
+    H훈련과정ID,
+    H훈련과정명,
+    J주요훈련과정구분,
+    J주요훈련과정구분명,
+    G국가기간전략산업직종훈련여부,
+    C총훈련시간,
+    W우편번호;
+}
