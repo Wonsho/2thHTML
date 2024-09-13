@@ -1,0 +1,86 @@
+/* @font-face {
+    font-family: 'HakgyoansimDunggeunmisoTTF-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-B.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+} */
+
+:root{
+    --color-main-1:#D86259;
+    --color-main-2: #905634;
+    --color-main-3: #5E2808;
+    --color-sub-1: #F3E184;
+    --color-accent-1: #334DCF;
+
+    /* transparent = 기본색 */
+    --color-base-0: transparent;
+
+    --color-base-1: #ffffff;
+    --color-base-2: #e4e7ea;
+    --color-base-3: #dee2e6;
+    --color-base-4: #ced4da;
+    --color-base-5: #adb5bd;
+    --color-base-6: #868e96;
+    --color-base-7: #495057;
+    --color-base-8: #343a40;
+    --color-base-9: #1a1c20;
+    --color-base-10: #000000;
+
+    --gap-0: 0;
+    --gap-1: 4px;
+    --gap-2: 4px;
+    --gap-3: 8px;
+    
+    --gap-1em: 0.4em;
+    --gap-2em: 1em;
+    --gap-1p: 1%;
+
+    --radius-0: 0;
+    --radius-1: 6px;
+    --radius-2: 10px;
+
+    --width-1: 100px;
+    --width-2: 150px;
+    --width-3: 200px;
+
+}
+
+body{
+    font-family: 'Pretendard','HakgyoansimDunggeunmisoTTF-B','고딕','명조';
+    /* font-family: 'Pretendard'; */
+    font-size: 15px;
+}
+
+.n-icon{
+    --icon-color:red;
+}
+
+/* .c {
+    box-sizing: content-box;
+    width: 100px;
+    height: 100px;
+    padding: 4px;
+    border: 1px solid blue;
+    margin: 1px;
+} */
+
+div:is(.b) {
+    background-color: orange;
+}
+
+div.a {
+    background-color: red;
+}
+
+div:link {
+    background-color: green;
+}
+
+/* span{
+    width:100px;
+    height:100px;
+}
+
+div {
+    display: flex;
+} */

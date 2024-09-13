@@ -1,0 +1,318 @@
+.t::before{
+    background-color: yellow;
+    content: "WT";
+   
+}
+
+.t::after {
+    background-color: rgb(94, 255, 0);
+    content: "HOLY";
+
+}
+/* :where( */
+/* ) */
+.n-icon
+{
+    --icon-width:24px;
+    --icon-color:var(--color-main-1);
+    --deco-gap:0px;
+    display: inline-flex;
+    /* 슈링크옵션 = 플렉스가 아이콘 크기를 무시하고 쭈그려놈 */
+    width: var(--icon-width);
+    height: var(--icon-width);
+    overflow: hidden;
+    /* overflow = 텍스트가 박스밖으로 나가있는것 */
+    /* text-indent: -999px; */
+    align-items: center;
+    gap:var(--deco-gap);
+}
+
+ .n-icon\:home::before {
+     order: 1;
+     background-color: red;
+ }
+
+:is(
+        .n-icon\:home,
+        .n-icon\:dashboard,
+        .n-icon\:sign,
+        .n-icon\:signout,
+        .n-icon\:cart
+)::before{
+    flex-shrink: 0;
+
+    content:"";
+    display: inline-flex;
+    width: var(--icon-width);
+    height: var(--icon-width);
+    /* inherit = 부모랑 같이하겠다 */
+    overflow: hidden;
+    text-indent: -999px;
+    /* background-image: url("/image/icon/home.svg"); */
+    background-color: var(--icon-color);
+    background-repeat: no-repeat;
+    mask-size: var(--icon-width);
+}
+
+
+.n-icon\:home::before{
+ 
+    /* background-image: url("/image/icon/home.svg"); */
+    mask-image: url("/image/icon/home.svg");
+  
+}
+
+.n-icon\:dashboard::before {
+   
+    /* background-image: url("/image/icon/dashboard.svg"); */
+    mask-image: url("/image/icon/dashboard.svg");
+}
+
+.n-icon\:sign::before {
+
+    mask-image: url("/image/icon/sign.svg");
+
+}
+
+.n-icon\:signout::before {
+
+    mask-image: url("/image/icon/singout.svg");
+
+}
+
+.n-icon\:cart::before {
+
+    mask-image: url("/image/icon/cart.svg");
+
+}
+
+/* =============size========================================= */
+.n-icon-size\:1,
+.n-icon-size\:small{
+    --icon-width:16px;
+    /* width: var(--w);
+    height: var(--w); */
+    /* background-size: var(--w); */
+}
+
+.n-icon-size\:2,
+.n-icon-size\:medium,
+.n-icon-size\:default,
+.n-icon-size {
+    --icon-width: 24px;
+}
+
+.n-icon-size\:3,
+.n-icon-size\:large {
+    --icon-width: 32px;
+}
+
+/* a And b AND c */
+/* .a.b.c{
+
+} */
+ /* main 1/2/3
+ sub 1/2/3
+ accent 1/2/3
+ base 1/2/3/4/5/6/7/8/9 */
+
+/* =======color================================================== */
+
+.n-icon-color\:main-1 {
+    --icon-color: var(--color-main-1,#D86259);
+}
+
+.n-icon-color\:main-2 {
+    --icon-color: var(--color-main-2, #905634);
+}
+
+.n-icon-color\:main-3 {
+    --icon-color: var(--color-main-3,#5E2808);
+}
+
+.n-icon-color\:sub-1 {
+    --icon-color: var(--color-sub-1, #F3E184);
+}
+
+.n-icon-color\:accent-1 {
+    --icon-color: var(--color-accent-1,#334DCF);
+}
+
+
+/* =======deco================================================== */
+
+.n-deco{
+    text-indent: initial;
+    width:auto;
+}
+
+.n-deco-gap\:0{
+    --deco-gap: 0px;
+}
+
+.n-deco-gap\:1 {
+    --deco-gap: 5px;
+}
+
+.n-deco-gap\:2 {
+    --deco-gap: 10px;
+}
+
+.n-deco-pos\:top,
+.n-deco-pos\:bottom{
+    flex-direction: column;
+    height: auto;
+}
+
+
+ .n-deco-pos\:left::before,
+ .n-deco-pos\:top::before {
+     /* order: initial; */
+     order: unset;
+ }
+
+ .n-deco-pos\:right::before,
+ .n-deco-pos\:bottom::before {
+     order: 1;
+ }
+
+ /* 반응형을 옵션으로 만든것 */
+ @media (768px <= width) {
+    .md\:n-deco {
+        text-indent: initial;
+            width: auto;
+        }
+    
+        .md\:n-deco-gap\:0 {
+            --deco-gap: 0px;
+        }
+    
+        .md\:n-deco-gap\:1 {
+            --deco-gap: 5px;
+        }
+    
+        .md\:n-deco-gap\:2 {
+            --deco-gap: 10px;
+        }
+    
+        .md\:n-deco-pos\:top,
+        .md\:n-deco-pos\:bottom {
+            flex-direction: column;
+            height: auto;
+        }
+    
+    
+        .md\:n-deco-pos\:left::before,
+        .md\:n-deco-pos\:top::before {
+            /* order: initial; */
+            order: unset;
+        }
+    
+        .md\:n-deco-pos\:right::before,
+        .md\:n-deco-pos\:bottom::before {
+            order: 1;
+        }
+ }
+ /* ============================================= */
+
+ .n-btn{
+    border: 1px solid var(--color-base-3,black);
+    border-radius: 10px;
+    padding: 8px 10px;
+
+    display: inline-flex;
+    /* flex = 안쪽에정렬할수있을때 */
+}
+
+/* 반응형 */
+.n-btn:hover{
+    background-color: white;
+    /* color:#334DCF
+     */
+}
+
+.n-btn:hover::before{
+    background-color: #334DCF;
+}
+
+.n-btn:not(.n-deco){
+   text-indent: -999px;
+}
+
+/* AND표시는 "."으로 한다
+따라서 화면에 홈 텍스트가 사라졌다 */
+
+/* :where(
+    .n-btn, .n-deco
+):where( */
+.n-btn:is(
+        .n-icon\:home,
+        .n-icon\:dashboard,
+        .n-icon\:sign,
+        .n-icon\:signout
+):not(.n-deco)
+{
+    text-indent: -999px;
+}
+
+/* 아이디를 나타내는것 */
+#b{
+    background-color: red;
+}
+
+/* 클래스 */
+:is(.b){
+    background-color: blue;
+}
+
+/* 클래스 is랑 동급 */
+.b{
+    background-color: purple;
+}
+
+:where(.b){
+    background-color: yellow;
+}
+
+:where(
+    div,section
+)>:where(
+    h1,
+    h2,
+    h3,
+    h4,
+    h5
+){
+    font-weight: bold;
+}
+
+nav>:where(h1,h2,h3){
+    font-weight : bold;
+}
+
+.n-btn.n-btn-color\:main{
+    color:#fff;
+    background-color: var(--color-main-2);
+    
+    transition: transform 0.2s,
+    background-color 5s;
+}
+
+.n-btn-color\:main:hover {
+    background-color: var(--color-main-1);
+    box-shadow: 2px 2px 3px #999;
+    transform: translateX(-2px) translateY(-2px);
+}
+
+.n-btn-color\:main:hover::before {
+    background-color: var(--color-main-2);
+}
+
+.c {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    padding: 4px;
+    border: 1px solid blue;
+    margin: 1px;
+}

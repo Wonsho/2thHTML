@@ -49,6 +49,7 @@
     padding:10px 10px;
     display: flex;
     flex-direction: column;
+    list-style-type: none;
     
     
 }
@@ -66,16 +67,16 @@
     
 }
 
-.tab-bar-color:hover{
+.bottom-bar-color:hover{
     background-color: white;
     
 }
 
-.tab-bar-color:hover::before {
+.bottom-bar-color:hover::before {
     background-color: #3E68FF;
 }
 
-.tab-bar{
+.bottom-bar{
     margin-bottom: 0px;
     position: fixed;
     bottom: 0;
