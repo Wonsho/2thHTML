@@ -21,6 +21,7 @@
     font-size: 30px;
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
 
 
@@ -43,12 +44,17 @@
 }
 
 /* MBTI 텍스트 */
-.test-text{
+.test-box{
     
+    list-style-type: none;
+    width:700px;
+    height: 800px;
+    border : 1px solid black;
     text-align: center;
     padding:10px 10px;
-    display: flex;
-    flex-direction: column;
+    
+    /* display: flex; */
+    /* flex-direction: column; */
     
     
 }
@@ -66,16 +72,9 @@
     
 }
 
-.tab-bar-color:hover{
-    background-color: white;
-    
-}
 
-.tab-bar-color:hover::before {
-    background-color: #3E68FF;
-}
-
-.tab-bar{
+/* ========하단바================ */
+.btm-bar{
     margin-bottom: 0px;
     position: fixed;
     bottom: 0;
@@ -88,6 +87,24 @@
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.btm-bar-color:hover{
+    background-color: white;
+    
+}
+
+.btm-bar-color:hover::before {
+    background-color: #3E68FF;
+}
+
 .main-color{
     box-shadow: 0 -10px 5px rgba(0, 0, 0, 0.1);
 }
+
+
+
+/* ========반응형===================== */
+@media (100px<= width <=800px) {
+    .btm-bar {
+      width:100%;
+    }
+  }

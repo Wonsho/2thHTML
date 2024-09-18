@@ -1,0 +1,118 @@
+body{
+    background-color: #dfdfdf;
+    /* margin: 0;
+    padding: 0; */
+}
+
+header{
+    background-color: #fff;
+}
+
+/* 로고 */
+.logo{
+    /* font-family: 'Lora'; */
+     font-size: 30px;
+     color: #334DCF;
+     background-color: aquamarine;
+}
+
+/* 로그인 */
+.login{
+    text-decoration: none;
+    top: 30px;
+    background-color: aqua;
+    color: black;
+    display: flex;
+    
+}
+
+section h1{
+    display: none;
+    background-color: #334DCF;
+}
+
+/* 검색 */
+.search{
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-color: #334DCF;
+    border-radius: 20px;
+    margin: 20px;
+    flex-grow: 1;
+    flex-shrink: 1;
+   
+    
+}
+
+.top-bar{
+    display: flex;   
+}
+
+/* 상단바 */
+.main-list{
+    width: 100%;
+
+    /* justify content ( 가로축 - 중심축 )
+    align-items ( 세로축 - 교차축 ) */
+    justify-content:center;
+    align-items:center;
+
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    text-decoration: none;
+    overflow: hidden;
+    /* box-shadow: 0 0 1px rgba(0,0,0,0.2); */
+    color: #444444;
+    /* margin: 0px 0px px; */
+    /* position: fixed; */
+}
+
+.main-list:hover{
+    color: #334DCF;
+}
+
+.top-bar-filter{
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #334DCF;
+    color: #ddd;
+    padding: 5px;
+    
+}
+
+/* 차순버튼 */
+.order-btn{
+    /* float: right; */
+    /* margin-left: auto; */
+    border-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: aqua;
+    border: 1px solid black;
+    padding: 20px;
+    
+    
+}
+
+
+
+/* 학원목록 */
+.accademy-list{
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    background-color: #ffffff;
+    gap: 20px;
+    text-decoration: none;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    margin: 40px 20px 20px 20px;
+    border-radius: 20px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    
+}

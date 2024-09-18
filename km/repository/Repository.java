@@ -1,6 +1,7 @@
 package com.newlecture.web.class8th.km.repository;
 
 import com.newlecture.web.class8th.km.Data;
+import com.newlecture.web.class8th.km.entity.Exam;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,7 +10,7 @@ import java.util.Scanner;
 
 public class Repository {
 
-    public ArrayList<Data> getList() throws FileNotFoundException {
+    public ArrayList<Exam> getList() throws FileNotFoundException {
         FileInputStream fis = new FileInputStream("C:/res/data.csv");
         Scanner scan = new Scanner(fis);
         ArrayList<Data> dataList = new ArrayList<>();
