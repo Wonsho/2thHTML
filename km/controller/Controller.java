@@ -8,13 +8,4 @@ import java.util.ArrayList;
 
 public class Controller {
 
-    private Service service = new Service();
-
-    public void getUrl() throws FileNotFoundException {
-        ArrayList<Data> datas = service.getList();
-
-        for (Data data : datas) {
-            System.out.println(data.toString());
-        }
-    }
 }
