@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITDA</title>
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <!-- 구글 폰트 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
 
     <header>
         <div class="logo">
-            <p>ITDA</p>
+            <h1>ITDA</h1>
         </div>
         <form action="/search" method="get" class="search-form">
             <input type="text" name="query" placeholder="ITDA 검색">
@@ -28,10 +28,27 @@
 
     <nav class="top-nav">
         <ul>
-            <li><button type="button" class="searchAcademy" onclick="location.href='/academy-search'">학원검색</button></li>
-            <li><button type="button" class="community" onclick="location.href='/community'">커뮤니티</button></li>
-            <li><button type="button" class="notices" onclick="location.href='/notices'">공지사항</button></li>
-            <li><button type="button" class="myPick" onclick="location.href='/my-pick'">마이픽</button></li>
+            <li>
+                <button type="button" class="searchAcademy" onclick="location.href='/academy-search'">
+                    <img class="top-menu_img" src="../image/school_24dp_3F69FF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    <span class="top-menu-list">학원검색</span>
+                </button>
+            </li>
+            <li><button type="button" class="community" onclick="location.href='/community'">
+                    <img class="top-menu_img" src="../image/forum_24dp_3F69FF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    <span class="top-menu-list">커뮤니티</span>
+                </button>
+            </li>
+            <li><button type="button" class="notices" onclick="location.href='/notices'">
+                    <img class="top-menu_img" src="../image/notifications_24dp_3F69FF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    <span class="top-menu-list">공지사항</span>
+                </button>
+            </li>
+            <li><button type="button" class="notices" onclick="location.href='/notices'">
+                <img class="top-menu_img" src="../image/favorite_24dp_3F69FF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <span class="top-menu-list">마이픽</span>
+            </button>
+        </li>
         </ul>
     </nav>
 
@@ -43,11 +60,12 @@
                     <a href="/academy/1">
                         <h2>IT 개발자로 가는 JAVA 프로그래밍 기초</h2>
                         <dl>
-                            <dd>역삼 그린 컴퓨터 아카데미</dd>
+                            <dt>역삼 그린 컴퓨터 아카데미</dt>
                             <dd>#SW 엔지니어링</dd>
                             <dd>교육장소: 오프라인</dd>
                             <dd>강남구</dd>
                             <dd>개강일: 24.09.02</dd>
+                            
                         </dl>
                     </a>
                 </li>
@@ -55,7 +73,7 @@
                     <a href="/academy/2">
                         <h2>IT 개발자를 가는 JAVA 프로그래밍 기초</h2>
                         <dl>
-                            <dd>역삼 그린 컴퓨터 아카데미</dd>
+                            <dt>역삼 그린 컴퓨터 아카데미</dt>
                             <dd>#SW 엔지니어링</dd>
                             <dd>교육장소: 오프라인</dd>
                             <dd>강남구</dd>
@@ -67,7 +85,7 @@
                     <a href="/academy/3">
                         <h2>IT 개발자로 가는 JAVA 프로그래밍 기초</h2>
                         <dl>
-                            <dd>역삼 그린 컴퓨터 아카데미</dd>
+                            <dt>역삼 그린 컴퓨터 아카데미</dt>
                             <dd>#SW 엔지니어링</dd>
                             <dd>교육장소: 오프라인</dd>
                             <dd>강남구</dd>
@@ -83,14 +101,14 @@
             <ul>
                 <li>
                     <a href="/popular-academy/1">
-                        <img src="학원이미지1.jpg" alt="인기 학원 이미지 1">
+                        <img src="../image/hi.jpg" alt="인기 학원 이미지 1">
                         <span>IT 개발자로 가는 JAVA 프로그래밍 기초</span>
                     </a>
                 </li>
                 <li>
                     <a href="/popular-academy/2">
-                        <img src="학원이미지2.jpg" alt="인기 학원 이미지 2">
-                        <span>IT 개발자로 가는 JAVA 프로그래밍 기초</span>
+                        <img src="../image/newlect.png" alt="인기 학원 이미지 2">
+                        <span>NEWLECT과 함께 JAVA 프로그래밍 기초</span>
                     </a>
                 </li>
             </ul>
@@ -130,12 +148,9 @@
             <h1>소식들을 ITDA <a href="/all-news">더보기</a></h1>
             <ul>
                 <li>
-                    <a href="/news/1">
-                        <img src="기사사진.jpg" alt="기사 사진">
-                        <div>
-                            <h2>AI 시대 우리는 살아남을 수 있을까?</h2>
-                            <p>블라블라블라</p>
-                        </div>
+                    <a href="https://www.hani.co.kr/arti/economy/it/1152883.html">
+                        <img src="../image/nexon.jpg" alt="기사 사진">
+                        <span class="news-title">‘던파·메이플·FC’ 넥슨, 2분기 영업익 3974억원</span>
                     </a>
                 </li>
             </ul>

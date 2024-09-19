@@ -1,6 +1,6 @@
 
     .bar-icon\:community,
-    .bar-icon\:academy,
+    .bar-icon\:eyes,
     .bar-icon\:home,
     .bar-icon\:login,
     .bar-icon\:mypic
@@ -24,7 +24,7 @@
  
 :is(
         .bar-icon\:community,
-        .bar-icon\:academy,
+        .bar-icon\:eyes,
         .bar-icon\:home,
         .bar-icon\:login,
         .bar-icon\:mypic,
@@ -60,7 +60,7 @@
    
 }
 
-.bar-icon\:academy::before{
+.bar-icon\:eyes::before{
     mask-image: url("/css/image/icon/eyes.svg");
 }
 

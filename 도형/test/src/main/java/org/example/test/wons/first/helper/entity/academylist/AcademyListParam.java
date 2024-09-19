@@ -1,0 +1,32 @@
+package org.example.test.wons.first.helper.entity.academylist;
+
+public enum AcademyListParam {
+    J주소,
+    C컨텐츠,
+    S수강비,
+    G고용보험3개월취업인원수,
+    G고용보험3개월취업누적인원10이하여부,
+    G고용보험3개월취업률,
+    G고용보험6개월취업률,
+    D등급,
+    H훈련기관코드,
+    NCS코드,
+    S실제훈련비,
+    S수강신청인원,
+    M만족도점수,
+    B부제목,
+    B부제목링크,
+    J전화번호,
+    J제목,
+    J제목아이콘,
+    J제목링크,
+    H훈련종료일자,
+    H훈련시작일자,
+    H훈련대상,
+    H훈련구분,
+    H훈련기관ID,
+    J지역코드_중뷴류,
+    H훈련과정순차,
+    H훈련과정ID,
+    J정원
+}
