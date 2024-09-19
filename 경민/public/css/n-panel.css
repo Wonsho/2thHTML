@@ -5,10 +5,23 @@
 
 
 .card-list {
-    display: flex;
-    /* width: 1200px; */
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    /* grid-template-columns: repeat(3,1fr); */
+    /* display: flex;
+    width: 1200px;
+    flex-wrap: wrap; */
 }
+
+.card-list:nth-child(-3){
+    background-color: red;
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+
+
 
 .n-panel {
     width: 100%;
