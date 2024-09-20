@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITDA</title>
+    <link href="/css/ListStyle.css" rel="stylesheet">
+    <!-- 구글 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,650;1,535&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="" class="header:logo">ITDA</a>
+        </div>
+        <form action="/search" method="get" class="search-form">
+            <input type="text" name="query" placeholder="ITDA 검색">
+            <button type="submit">검색</button>
+        </form>
+        <div class="login">
+            <a href="/login">로그인</a>
+        </div>
+    </header>
+
+    <nav>
+        <h1>상단메뉴</h1>
+        
+        <ul class="top-menu-list">
+            <li><a href="" class="top-menu-color:main"><button>필터</button></a></li>
+            <li><a href="" class="top-menu-color:main">전체</a></li>
+            <li><a href="" class="top-menu-color:main">웹개발</a></li>
+            <li><a href="" class="top-menu-color:main">모바일</a></li>
+            <li><a href="" class="top-menu-color:main">게임개발</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="recommendAcademy">
+            <h1>학원들을 ITDA <button id="filterButton" class="recommendAcademy:filter">필터</button></h1>
+            <ul>
+                <li>
+                    <a href="/academy/1">
+                        <h2>IT 개발자로 가는 JAVA 프로그래밍 기초</h2>
+                        <dl>
+                            <dd>역삼 그린 컴퓨터 아카데미</dd>
+                            <dd>#SW 엔지니어링</dd>
+                            <dd>교육장소: 오프라인</dd>
+                            <dd>강남구</dd>
+                            <dd>개강일: 24.09.02</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="/academy/2">
+                        <h2>IT 개발자를 가는 JAVA 프로그래밍 기초</h2>
+                        <dl>
+                            <dd>역삼 그린 컴퓨터 아카데미</dd>
+                            <dd>#SW 엔지니어링</dd>
+                            <dd>교육장소: 오프라인</dd>
+                            <dd>강남구</dd>
+                            <dd>개강일: 24.09.02</dd> 
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="/academy/3">
+                        <h2>IT 개발자로 가는 JAVA 프로그래밍 기초</h2>
+                        <dl>
+                            <dd>역삼 그린 컴퓨터 아카데미</dd>
+                            <dd>#SW 엔지니어링</dd>
+                            <dd>교육장소: 오프라인</dd>
+                            <dd>강남구</dd>
+                            <dd>개강일: 24.09.02</dd> 
+                        </dl>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <nav class="bottom-nav">
+        <a href="/community">
+            <img src="/image/icon/community-icon.svg" alt="커뮤니티 아이콘">
+            <span>커뮤니티</span>
+        </a>
+        <a href="/kookbiAcademy">
+            <img src="/image/icon/kookbiacademy-icon.svg" alt="국비학원 아이콘">
+            <span>국비학원</span>
+        </a>
+        <a href="/main">
+            <img src="/image/icon/home-icon.svg" alt="홈 아이콘">
+            <span>홈</span>
+        </a>
+        <a href="/myPick">
+            <img src="/image/icon/mypick-icon.svg" alt="마이픽 아이콘">
+            <span>마이픽</span>
+        </a>
+        <a href="/myPage">
+            <img src="/image/icon/mypage-icon.svg" alt="마이페이지 아이콘">
+            <span>마이페이지</span>
+        </a>
+    </nav>
+
+    <footer>
+        <p>주식회사 잇다아아아</p>
+    </footer>
+</body>
+</html>

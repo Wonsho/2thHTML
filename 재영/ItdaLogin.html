@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Itda Login</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITDA 로그인</title>
+</head>
+<body>
+
+  <h1>ITDA</h1>
+
+  <header>
+      <div>
+          <img src="Itda 로고" alt="Itda 로고">
+      </div>
+  </header>
+
+  <main>
+      <section class="login-form">
+        <h1>로그인</h1>
+          <form action="/login" method="post">
+              <div>
+                  <label for="email">이메일</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div>
+                  <label for="password">비밀번호</label>
+                  <input type="password" id="password" name="password" required>
+                  <button type="button" onclick="passwordVisibility()">👁비밀번호 표시</button>
+              </div>
+              <div>
+                  <input type="checkbox" id="remember" name="remember">
+                  <label for="remember">로그인 유지</label>
+              </div>
+              <button type="submit">로그인</button>
+          </form>
+      </section>
+
+      <section class="login-help">
+          <div>
+              <a href="/forgot-id">아이디 찾기</a> |
+              <a href="/forgot-password">비밀번호 찾기 ></a>
+          </div>
+      </section>
+
+      <section class="login-sns">
+          <div>
+              <p>SNS로 간편하게 로그인하기</p>
+              <div>
+                  <a href="/login/google">
+                      <img src="/구글 아이콘" alt="Google 로그인">
+                  </a>
+                  <a href="/login/kakao">
+                      <img src="/카카오 아이콘" alt="Kakao 로그인">
+                  </a>
+                  <a href="/login/naver">
+                      <img src="/네이버 아이콘" alt="Naver 로그인">
+                  </a>
+              </div>
+          </div>
+      </section>
+
+      <section class="signUp-help">
+          <div>
+              <p>아직 ITDA에 가입하지 않으셨나요? <a href="/signUp">회원가입 하기</a></p>
+          </div>
+      </section>
+  </main>
+
+  <aside>
+      <nav>
+          <h1>하단바</h1>
+          <ul>
+              <li><a href="/community">커뮤니티</a></li>
+              <li><a href="/kookbiAcademy">국비학원</a></li>
+              <li><a href="/home">홈</a></li>
+              <li><a href="/myPick">마이픽</a></li>
+              <li><a href="/myPage">마이페이지</a></li>
+          </ul>
+      </nav>
+  </aside>
+
+  <footer>
+  </footer>
+
+  <script>
+      function togglePasswordVisibility() {
+          var passwordInput = document.getElementById("password");
+          if (passwordInput.type === "password") {
+              passwordInput.type = "text";
+          } else {
+              passwordInput.type = "password";
+          }
+      }
+  </script>
+
+</body>
+</html>
