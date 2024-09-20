@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        var nums = new Array();
+        nums[3] = 5;
+        console.log(nums);
+        
+        console.log(nums.length);
+        console.log(typeof nums[3]);
+        
+        var numss = new Array(5);
+        var numss = new Array(5,"Hello");
+        console.log(typeof numss[2]);
+        console.log(numss.length);
+
+        var numss = new Array(5,10,21,"hello",new Array(2,3,4));
+        console.log(numss[4][1]);
+
+        var nums = new Array();
+         nums[0] = 1;
+           nums[1] = 2;
+            nums[2] = 3;
+             nums[3] = 4;
+              nums[4] = 5;
+         nums.push(5);
+         console.log(nums);
+
+         var n1 = nums.pop();
+         console.log(nums);
+
+          var nums = new Array();
+          nums[0] = 1;
+           nums[1] = 2;
+            nums[2] = 3;
+             nums[3] = 4;
+              nums[4] = 5;
+         nums.push(5);
+         console.log(nums);
+
+         var n1 = nums.shift();
+        //  nums.unshift(7);
+         console.log(nums);
+
+         var nums = new Array();
+         nums[0] = 1;
+           nums[1] = 2;
+            nums[2] = 3;
+             nums[3] = 4;
+              nums[4] = 5;
+         nums.splice(2,2);
+         console.log(nums);
+
+         var exam = new Object();
+         exam.kor = 30;
+        //  exam.Kor = 50;
+        
+         console.log(exam);
+         delete exam.kor;
+        //  console.log(exam["Kor"]);
+         console.log(exam);
+         console.log(exam.eng);
+
+         //object
+         var exam = {"id":1,"title":"hello"};
+         console.log(exam);
+
+         var notices = [{"id":1,"title":"hello"},
+         {"id":2,"title":"great"},
+         {"id":3,"title":"morning"}
+        ];
+         console.log(notices[2]);
+
+         var code = "var x=30;";
+         eval(code);
+         console.log(x);
+
+    </script>
+</head>
+<body>
+    <h1>javascript ES5</h1>
+</body>
+</html>

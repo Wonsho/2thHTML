@@ -52,9 +52,15 @@
     border : 1px solid black;
     text-align: center;
     padding:10px 10px;
+<<<<<<< HEAD
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+=======
     
     /* display: flex; */
     /* flex-direction: column; */
+>>>>>>> 151aec2fa1709fe643a02ff5d1a6a517455565e0
     
     
 }
@@ -72,9 +78,22 @@
     
 }
 
+<<<<<<< HEAD
+.bottom-bar-color:hover{
+    background-color: white;
+    
+}
+
+.bottom-bar-color:hover::before {
+    background-color: #3E68FF;
+}
+
+.bottom-bar{
+=======
 
 /* ========하단바================ */
 .btm-bar{
+>>>>>>> 151aec2fa1709fe643a02ff5d1a6a517455565e0
     margin-bottom: 0px;
     position: fixed;
     bottom: 0;

@@ -10,6 +10,8 @@ import java.util.Scanner;
 
 public class Repository {
 
+<<<<<<< HEAD
+=======
     public ArrayList<Exam> getList() throws FileNotFoundException {
         FileInputStream fis = new FileInputStream("C:/res/data.csv");
         Scanner scan = new Scanner(fis);
@@ -23,4 +25,5 @@ public class Repository {
 
         return dataList;
     }
+>>>>>>> 151aec2fa1709fe643a02ff5d1a6a517455565e0
 }

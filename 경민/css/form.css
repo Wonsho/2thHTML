@@ -1,0 +1,31 @@
+/* form.css */
+.n-form {
+    /* form style */
+    --form-border-radius: 16px;
+    --form-padding: 24px;
+
+    /* textbox style */
+    /* textbox-size */
+    --textbox-padding-x: 12px;
+    --textbox-input-height: 36px;
+    --textbox-textarea-min-height: 58px;
+
+    /* textbox-border-radius */
+    --textbox-border-radius: 6px;
+
+    /* textbox-border-color */
+    --textbox-border-color: var(--color-base-3);
+
+    /* textbox-border-width */
+    --textbox-underline-border-width: 1.6px;
+
+    /* textbox-status:focus */
+    --textbox-border-color-focus: var(--color-sub-2);
+
+    /* textbox-status:success */
+    --textbox-border-color-success: #37b24d;
+
+    /* textbox-status:warning */
+    --textbox-color-warning: var(--color-accent-1);
+    --textbox-border-color-warning: var(--color-accent-1);
+}
