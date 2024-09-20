@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        
+        {
         var nums = new Array();
         nums[3] = 5;
         console.log(nums);
@@ -79,6 +79,132 @@
          eval(code);
          console.log(x);
 
+         var json='{"kor":30,"eng":40,math:60}';
+        //  var exam = eval(json);
+         var exam = eval("("+json+")");
+
+         console.log(exam.kor);
+
+        //  var json = "{kor:30,eng:40}";
+        //  var exam = JSON.parse(json);
+        //  console.log(exam.kor);
+        
+         var json = "{\"kor\":30,\"eng\":40}";
+         var exam = JSON.parse(json);
+         console.log(exam.kor);
+        
+        //  var exam = {kor:30,exam:40};
+        //  alert(exam.kor);
+
+        //  var jsonString = JSON.stringify(exam);
+        //  alert(jsonString);
+        
+        //  var kor = prompt("국어성적을 입력하세요");
+
+        //  var result = kor || 10;
+        //  result = result + 2;
+        //  console.log(result);
+        }
+        {
+        var x = 3;
+        var y = 'a';
+
+        console.log(isNaN(x*y));
+
+        var z = 3*'3';
+        console.log(z=='9');
+        // console.log(z);
+
+        var f = Number.MAX_VALUE*12;
+        console.log(f);
+        
+        var z = "Cat" || "dog";
+        console.log(z);
+        }
+        {
+            var c = [1,4,3,5];
+            c={kor:3,eng:4,math:5};
+
+            for(var i in c)
+                // console.log(c[i]);
+                console.log(i);
+
+            // for(var v of c)
+            //     console.log(v);
+        }
+
+        // {
+        //     var add = new Function("x,y","return x+y");
+        //     console.log(add(5,10));
+
+        //     var mul = new Function("x,y","return x*y");
+        //     console.log(mul(5,10));
+
+        //     var add = function(x,y){
+        //         return x+y;
+        //     }
+        //     console.log(add(7,10));
+        // }
+
+        function add(){
+            return arguments[0]+arguments[1]+arguments[2];
+        };
+
+        var sum = add(2,3,5);
+        console.log(sum);
+
+        // alert(a);
+        // var a = 1;
+        // {   
+        //     console.log(window);
+        //     console.log(a1=1, a1);
+        //     console.log(window);
+        //     console.log(a2);
+        //     var a2 = 1;
+        // }
+
+        var f1 = function(){
+            window.a = 1;
+
+            console.log(window.a);
+            var a;
+
+           
+        }
+        f1();
+
+        // var j= 1;
+        // var j =2;
+        // alert(j);
+
+       function outer(){
+        let outerValue = "Hello";
+        function inner(){
+            console.log(outerValue);
+        }
+        return inner;
+       }
+       var innerfunction = outer();
+       innerfunction();
+
+      
+       const car = {
+        name : "sonata",
+        color : "black",
+        wheel : 4
+       };
+
+       for(let i in car)
+       console.log(i + ":"+ car[i]);
+
+        //  for(var i of df)
+        // console.log(i);
+
+        const fruit = ["apple","banana","orange",4];
+        
+        for(const i of fruit)
+            console.log(i);
+        
     </script>
 </head>
 <body>
