@@ -1,3 +1,5 @@
+
+
 body{
     background-color:#ededed;
     
@@ -19,7 +21,8 @@ header{
     font-size: 30px;
     font-weight: bold;
     color: #3b60ff;
-    display: inline;    
+    display: inline;
+    cursor: pointer;    
 }
 
 /* 로그인 */
@@ -116,6 +119,7 @@ section h1{
     color: #ddd;
     padding: 5px 0px;
     margin-left: 20px;
+    cursor: pointer;
     
 }
 
@@ -136,25 +140,63 @@ section h1{
     background-color: var(--color-main-2);
     position: absolute;
     top: 10px;
-    right: 5px; 
-   
+    right: 5px;
+    cursor: pointer;
+    
 }
+
+.order-list{
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    border: 0.2px solid #dadada;
+    border-radius: 10px;
+    width: 30%;
+    height: 100px;
+   background-color: #fff;
+   position: absolute ;z-index: 2; 
+   top: 45px;
+   right: 0;
+     
+}
+
+.order-lists{
+    display: flex;
+    position: sticky;
+    width: 100%;
+    background-color: white;
+    border: 0;
+    background-color: transparent;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+
+.order-lists:hover{
+    color: var(--color-main-1);
+}
+
+/* ----연습중---- */
+#check-btn { display: none; }
+#check-btn:checked~.orders { display: block; } 
+.orders { display: none; }
 
 .text-none{
     text-indent: -9999px;
     display: flex;
-    padding: 5px;
+    padding: 10px;
 }
 
 
 /* 좋아요 이모티콘 */
 .heart{
-    color: #3b60ff;
-    margin-left: 320px;
+    /* margin-left: 320px; */
     position: absolute;
     top: 0px;
     right: 0px;
-        
+    color: var(--color-sub-1);
+    cursor: pointer;
+      
 }
 
 /* 학원목록 */
@@ -162,7 +204,7 @@ section h1{
     list-style-type: none;
     padding: 10px;
     display: flex;
-    position: relative;
+    position: relative;z-index: 1;
     flex-wrap: wrap;
     /* justify-content: space-around; */
     background-color: #ffffff;
@@ -229,73 +271,5 @@ ul>div{
 
 }
 
-.dropdown-label {
-    font-size: 12px;
-    margin: 10px;
-    font-weight: bold;
-    color: rgb(50, 50, 50);
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropbtn_icon {
-    font-family: 'Material Icons';
-}
-
-.dropbtn {
-    display: block;
-    border: 2px solid rgb(94, 94, 94);
-    border-radius: 4px;
-    background-color: #fcfcfc;
-    font-weight: 400;
-    color: rgb(124, 124, 124);
-    padding: 12px;
-    width: 240px;
-    text-align: left;
-    cursor: pointer;
-    font-size: 12px;
-    z-index: 1;
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    font-weight: 400;
-    background-color: #fcfcfc;
-    min-width: 240px;
-    border-radius: 8px;
-    height: 160px;
-    overflow: scroll;
-    box-shadow: 0px 0px 10px 3px rgba(190, 190, 190, 0.6);
-}
-
-.dropdown-content::-webkit-scrollbar {
-    width: 5px;
-    height: 10px;
-}
-
-.dropdown-content::-webkit-scrollbar-thumb {
-    border-radius: 2px;
-    background-color: rgb(194, 194, 194)
-}
-
-.dropdown-content div {
-    display: block;
-    text-decoration: none;
-    color: rgb(37, 37, 37);
-    font-size: 12px;
-    padding: 12px 20px;
-}
-
-.dropdown-content div:hover {
-    background-color: rgb(226, 226, 226);
-}
-
-.dropdown-content.show {
-    display: block;
-}
 
 
