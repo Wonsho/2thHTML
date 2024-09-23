@@ -6,10 +6,17 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/reset.css">
-    
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="css/color.css">
     <title>Document</title>
+
+    <style>
+        *{
+            font-family: "Pretendard";
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,8 +30,13 @@
     <section class="search">
         <h1>검색</h1>
             <!-- 텍스트 박스 태두리없애고 배경투명하게함 -->             
-            <input type="text" class="search-view">
-            <button>검색</button>
+            <form class="search-box" action="">
+                <input class="search-text" type="text">
+                <button class="search-btn" type="submit">
+                    <i class="material-icons">search</i>
+                </button>
+            </input>
+        </form>
     </section>
     <!-- ----------상단바-------------------------------- -->
     <section class="top-bar">
@@ -46,52 +58,85 @@
 
     <!---------------------- 메인-------------------------------- -->
     <main>
-        <div>
-        <a href="" class="order-btn">
-        </div>
+        <span>
+            <h1 class="text-none">필터</h1>
+            <button class="order-btn material-icons">filter_list</button>
+        </span>
 
-        <section>
+        <div class="dropdown-label"></div>
+    Lunch Menus
+    <span style="font-family: Material Icons;">restaurant</span>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">
+      <span class="dropbtn_icon">more_horiz</span>
+      <span class="dropbtn_content">Select a menu...</span>
+      <span class="dropbtn_click" style="font-family: Material Icons; font-size : 16px; color : #3b3b3b; float:right;"
+        onclick="dropdown()">arrow_drop_down</span>
+    </button>
+    <div class="dropdown-content">
+      <div class="fastfood" onclick="showMenu(this.innerText)">Burgerking</div>
+
+         
+
+    <section>
+
         <h1>학원리스트</h1>
         <ul class="accademy-list">
+             <li class="material-icons heart">bookmark</li>
             <a href="">
-            <li>찜</li>
-            <li>온라인</li>
-            <li>IT 개발자로 가는 JAVA 프로그래밍 기초</li>
-            <li>수강료 41,000원</li>
-            <li>역삼 그린 컴퓨터 아카데미</li>
-            <li>서울 강남구</li>
-            <li>개강일:24.09.02</li>
+            <li class="on-off">온라인</li>
+            <li class="subject">IT 개발자로 가는 JAVA 프로그래밍 기초</li>
+            <li class="cash">수강료 41,000원</li>
+            <li class="date">역삼 그린 컴퓨터 아카데미</li>
+            <li class="region">서울 강남구</li>
+            <li class="date">개강일:24.09.02</li>
         </ul>
+
+         <ul class="accademy-list">
+             <li class="material-icons heart">bookmark</li>
+            <a href="">
+            <li class="on-off">온라인</li>
+            <li class="subject">IT 개발자로 가는 JAVA 프로그래밍 기초</li>
+            <li class="cash">수강료 41,000원</li>
+            <li class="date">역삼 그린 컴퓨터 아카데미</li>
+            <li class="region">서울 강남구</li>
+            <li class="date">개강일:24.09.02</li>
+        </ul>
+
         <ul class="accademy-list">
+             <li class="material-icons heart">bookmark</li>
             <a href="">
-            <li>찜</li>
-            <li>온라인</li>
-            <li>IT 개발자로 가는 JAVA 프로그래밍 기초</li>
-            <li>수강료 41,000원</li>
-            <li>역삼 그린 컴퓨터 아카데미</li>
-            <li>서울 강남구</li>
-            <li>개강일:24.09.02</li>
+            <li class="on-off">온라인</li>
+            <li class="subject">IT 개발자로 가는 JAVA 프로그래밍 기초</li>
+            <li class="cash">수강료 41,000원</li>
+            <li class="date">역삼 그린 컴퓨터 아카데미</li>
+            <li class="region">서울 강남구</li>
+            <li class="date">개강일:24.09.02</li>
         </ul>
+
         <ul class="accademy-list">
+             <li class="material-icons heart">bookmark</li>
             <a href="">
-            <li>찜</li>
-            <li>온라인</li>
-            <li>IT 개발자로 가는 JAVA 프로그래밍 기초</li>
-            <li>수강료 41,000원</li>
-            <li>역삼 그린 컴퓨터 아카데미</li>
-            <li>서울 강남구</li>
-            <li>개강일:24.09.02</li>
+            <li class="on-off">온라인</li>
+            <li class="subject">IT 개발자로 가는 JAVA 프로그래밍 기초</li>
+            <li class="cash">수강료 41,000원</li>
+            <li class="date">역삼 그린 컴퓨터 아카데미</li>
+            <li class="region">서울 강남구</li>
+            <li class="date">개강일:24.09.02</li>
         </ul>
+
         <ul class="accademy-list">
+             <li class="material-icons heart">bookmark</li>
             <a href="">
-            <li>찜</li>
-            <li>온라인</li>
-            <li>IT 개발자로 가는 JAVA 프로그래밍 기초</li>
-            <li>수강료 41,000원</li>
-            <li>역삼 그린 컴퓨터 아카데미</li>
-            <li>서울 강남구</li>
-            <li>개강일:24.09.02</li>
+            <li class="on-off">온라인</li>
+            <li class="subject">IT 개발자로 가는 JAVA 프로그래밍 기초</li>
+            <li class="cash">수강료 41,000원</li>
+            <li class="date">역삼 그린 컴퓨터 아카데미</li>
+            <li class="region">서울 강남구</li>
+            <li class="date">개강일:24.09.02</li>
         </ul>
+        
         </section>
     </main>
 
@@ -114,7 +159,7 @@
             <i class="material-icons">favorite</i>
             <span class="nav-text">마이픽</span>
         </a>
-        <a href="mypage.html" class="nav-link">
+        <a href="login.html" class="nav-link">
             <i class="material-icons">account_circle</i>
             <span class="nav-text">프로필</span>
         </a>

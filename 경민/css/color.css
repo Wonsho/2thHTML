@@ -1,7 +1,21 @@
 :root {
-    --color-main-1: #334DCF;
+    --color-main-1: #3b60ff;
     --color-main-2: #fff;
-    --color-main-3: black;
-    --color-sub-1: #F3E184;
+    --color-main-3: #333;
+    --color-sub-1: #444;
+    --color-sub-2: orange;
+
+    /* -----폰트크기-------------- */
+    --font-size-0: 12px;
+    --font-size-1: 16px;
+    --font-size-2: 20px;
+    --font-size-3: 24px;
+    --font-size-4: 28px;
+    --font-size-5: 32px;
+
+    /* -----폰트굵기-------------- */
+    --font-weight-1: light;
+    --font-weight-2: bold;
     
+
 }

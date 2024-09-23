@@ -1,0 +1,301 @@
+body{
+    background-color:#ededed;
+    
+    /* margin: 0;
+    padding: 0; */
+}
+
+main{
+    position: relative;
+}
+
+header{
+    background-color: #fff;
+}
+@media (max-width:420px){
+/* 로고 */
+.logo{
+    margin: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #3b60ff;
+    display: inline;    
+}
+
+/* 로그인 */
+.login{
+    position: absolute;
+    left: 350px;
+    top: 10px;
+    display: flex;
+    text-align: right;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+section h1{
+    display: none;
+    background-color: #3b60ff;
+}
+
+/* 검색 */
+.search-box{
+   height: 30px;
+   width: 350px;
+   background: white;
+   border-radius: 40px;
+   padding: 10px;
+   border: 1px solid #3b60ff;
+   margin: 20px;
+}
+
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0px;
+    color: #797979;
+    font-size: 16px;
+    line-height: 30px;
+    width: 200px;
+}
+
+.search-btn{
+    color: #3b60ff;
+    float: right;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* 상단바 */
+.top-bar{
+    display: flex;   
+}
+
+.main-list{
+    width: 100%;
+    
+    /* justify content ( 가로축 - 중심축 )
+    align-items ( 세로축 - 교차축 ) */
+    justify-content:center;
+    align-items:center;
+    
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    text-decoration: none;
+    overflow: hidden;
+    /* box-shadow: 0 0 1px rgba(0,0,0,0.2); */
+    color: #444444;
+    /* margin: 0px 0px px; */
+    /* position: fixed; */
+}
+
+
+
+.main-list:hover{
+    color: #334DCF;
+}
+
+.top-bar-filter{
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #3b60ff;
+    color: #ddd;
+    padding: 5px 0px;
+    margin-left: 20px;
+    
+}
+
+.top-bar-filter:hover{
+    color: #fff;
+}
+
+
+/* 차순버튼 */
+.order-btn{
+    /* float: right; */
+    /* margin-left: auto; */
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex; 
+    border: 1px solid #555;
+    padding: 3px 10px;
+    background-color: var(--color-main-2);
+    position: absolute;
+    top: 10px;
+    right: 5px; 
+   
+}
+
+.text-none{
+    text-indent: -9999px;
+    display: flex;
+    padding: 5px;
+}
+
+
+/* 좋아요 이모티콘 */
+.heart{
+    color: #3b60ff;
+    margin-left: 320px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+        
+}
+
+/* 학원목록 */
+.accademy-list{
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    background-color: #ffffff;
+    gap: 0px;
+    text-decoration: none;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    margin: 20px;
+    border-radius: 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+/* .ex{
+    margin-top: auto;
+
+}
+
+ul>div{
+    justify: space-between;
+} */
+
+.accademy-list:hover{
+    transition: all 0.3s;
+  /* transform: rotate(360deg); */
+  /* -webkit-transform: scale(1.1);
+	transform: scale(1.1); */
+    transform: translateY(-2px); 
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.on-off{
+    color: var(--color-main-1);
+    font-weight: bold;
+   
+   
+}
+
+.subject{
+    font-size: var(--font-size-2);
+    color: var(--color-main-3);
+    font-weight: bold;
+}
+
+.cash{
+    color: var(--color-sub-2);
+}
+
+.region{
+    font-size: var(--font-size-0);
+    color: gray;
+
+}
+
+.date{
+    font-size: var(--font-size-0);
+    color: var(--color-sub-1);
+}
+
+}
+
+.dropdown-label {
+    font-size: 12px;
+    margin: 10px;
+    font-weight: bold;
+    color: rgb(50, 50, 50);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn_icon {
+    font-family: 'Material Icons';
+}
+
+.dropbtn {
+    display: block;
+    border: 2px solid rgb(94, 94, 94);
+    border-radius: 4px;
+    background-color: #fcfcfc;
+    font-weight: 400;
+    color: rgb(124, 124, 124);
+    padding: 12px;
+    width: 240px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 12px;
+    z-index: 1;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    font-weight: 400;
+    background-color: #fcfcfc;
+    min-width: 240px;
+    border-radius: 8px;
+    height: 160px;
+    overflow: scroll;
+    box-shadow: 0px 0px 10px 3px rgba(190, 190, 190, 0.6);
+}
+
+.dropdown-content::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: rgb(194, 194, 194)
+}
+
+.dropdown-content div {
+    display: block;
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+    font-size: 12px;
+    padding: 12px 20px;
+}
+
+.dropdown-content div:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        
         {
         var nums = new Array();
         nums[3] = 5;
@@ -200,10 +201,115 @@
         //  for(var i of df)
         // console.log(i);
 
-        const fruit = ["apple","banana","orange",4];
+        const fruit = ["apple","banana","orange"];
         
         for(const i of fruit)
             console.log(i);
+
+            var fun1 = function(){
+                console.log(1);
+            }
+
+            var fun2 = function(){
+                console.log(2);
+            }
+
+            var fun3 = function(){
+                console.log(3);
+            }
+
+            fun1();
+            fun2();
+            fun3();
+
+            var farr = [];
+            for(var i=0;i<3;i++)
+            farr[i] = function(){console.log(i+1);};
+
+            // for(var i=0;i<3;i++)
+            farr[0]();
+
+            {
+                //함수는 다른 함수로 넘겨질수 있는 객체이다
+
+                // var nums=[{kor:30,eng:40,math:50},{kor:50,eng:80,math:20},{kor:15,eng:40,math:90}];
+                var nums = [2,4,3,5,12,15,117,19];
+
+                // nums = nums.filter(function(item,index,arr){
+                //     return item > 3;
+                // });
+                nums = nums.filter((item,index,arr)=>item>3);
+
+                //sort = 문자로인식
+                // nums.sort(function(a,b){
+                //     return a-b;});
+                nums.sort((a,b)=>a-b);
+                
+                console.log(nums);
+            }
+
+            {
+                function print(){
+                    console.log("hello",this);
+                    a=3;
+
+                }
+
+                //this,argument,super
+                function Exam(){
+                    this.kor = 0;
+                }
+
+                print(); //일반 function으로 호출
+                new print(); //constructor로써 호출
+
+                // var Exam = new Exam();
+            }
+            
+            {
+                function Exam1(){
+                    this.kor = 1;
+                    this.eng = 2;
+                    this.math =3;
+
+                    this.total  = function(){
+                        return this.kor+this.eng+this.math;
+                    }
+                }
+
+                var exam2 = new Exam1();
+                var ftotal = exam2.total;
+
+                console.log(exam2.total(),ftotal());
+
+                //위임을할때 this를 넘겨받지못함
+                console.log(ftotal());
+
+                //6초뒤에넘겨받음
+                // setTimeout(aaa,6000);
+
+                
+            }
+
+            {
+                var y = 30;
+                let x = 30;
+               
+                console.log(x);
+            }
+
+            {
+                let template = `<section></section>`;
+            }
+            
+            
+            
+            {
+                var example=[{kor:30,eng:40},{kor:10,eng:80}];
+                example.sort((a,b)=>a.eng-b.eng);
+                console.log(example);
+            }
+            
         
     </script>
 </head>
