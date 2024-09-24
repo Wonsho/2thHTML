@@ -6,6 +6,7 @@
     <title>Document</title>
     <script>
         
+        {
         var nums = new Array();
         nums[3] = 5;
         console.log(nums);
@@ -79,6 +80,237 @@
          eval(code);
          console.log(x);
 
+         var json='{"kor":30,"eng":40,math:60}';
+        //  var exam = eval(json);
+         var exam = eval("("+json+")");
+
+         console.log(exam.kor);
+
+        //  var json = "{kor:30,eng:40}";
+        //  var exam = JSON.parse(json);
+        //  console.log(exam.kor);
+        
+         var json = "{\"kor\":30,\"eng\":40}";
+         var exam = JSON.parse(json);
+         console.log(exam.kor);
+        
+        //  var exam = {kor:30,exam:40};
+        //  alert(exam.kor);
+
+        //  var jsonString = JSON.stringify(exam);
+        //  alert(jsonString);
+        
+        //  var kor = prompt("국어성적을 입력하세요");
+
+        //  var result = kor || 10;
+        //  result = result + 2;
+        //  console.log(result);
+        }
+        {
+        var x = 3;
+        var y = 'a';
+
+        console.log(isNaN(x*y));
+
+        var z = 3*'3';
+        console.log(z=='9');
+        // console.log(z);
+
+        var f = Number.MAX_VALUE*12;
+        console.log(f);
+        
+        var z = "Cat" || "dog";
+        console.log(z);
+        }
+        {
+            var c = [1,4,3,5];
+            c={kor:3,eng:4,math:5};
+
+            for(var i in c)
+                // console.log(c[i]);
+                console.log(i);
+
+            // for(var v of c)
+            //     console.log(v);
+        }
+
+        // {
+        //     var add = new Function("x,y","return x+y");
+        //     console.log(add(5,10));
+
+        //     var mul = new Function("x,y","return x*y");
+        //     console.log(mul(5,10));
+
+        //     var add = function(x,y){
+        //         return x+y;
+        //     }
+        //     console.log(add(7,10));
+        // }
+
+        function add(){
+            return arguments[0]+arguments[1]+arguments[2];
+        };
+
+        var sum = add(2,3,5);
+        console.log(sum);
+
+        // alert(a);
+        // var a = 1;
+        // {   
+        //     console.log(window);
+        //     console.log(a1=1, a1);
+        //     console.log(window);
+        //     console.log(a2);
+        //     var a2 = 1;
+        // }
+
+        var f1 = function(){
+            window.a = 1;
+
+            console.log(window.a);
+            var a;
+
+           
+        }
+        f1();
+
+        // var j= 1;
+        // var j =2;
+        // alert(j);
+
+       function outer(){
+        let outerValue = "Hello";
+        function inner(){
+            console.log(outerValue);
+        }
+        return inner;
+       }
+       var innerfunction = outer();
+       innerfunction();
+
+      
+       const car = {
+        name : "sonata",
+        color : "black",
+        wheel : 4
+       };
+
+       for(let i in car)
+       console.log(i + ":"+ car[i]);
+
+        //  for(var i of df)
+        // console.log(i);
+
+        const fruit = ["apple","banana","orange"];
+        
+        for(const i of fruit)
+            console.log(i);
+
+            var fun1 = function(){
+                console.log(1);
+            }
+
+            var fun2 = function(){
+                console.log(2);
+            }
+
+            var fun3 = function(){
+                console.log(3);
+            }
+
+            fun1();
+            fun2();
+            fun3();
+
+            var farr = [];
+            for(var i=0;i<3;i++)
+            farr[i] = function(){console.log(i+1);};
+
+            // for(var i=0;i<3;i++)
+            farr[0]();
+
+            {
+                //함수는 다른 함수로 넘겨질수 있는 객체이다
+
+                // var nums=[{kor:30,eng:40,math:50},{kor:50,eng:80,math:20},{kor:15,eng:40,math:90}];
+                var nums = [2,4,3,5,12,15,117,19];
+
+                // nums = nums.filter(function(item,index,arr){
+                //     return item > 3;
+                // });
+                nums = nums.filter((item,index,arr)=>item>3);
+
+                //sort = 문자로인식
+                // nums.sort(function(a,b){
+                //     return a-b;});
+                nums.sort((a,b)=>a-b);
+                
+                console.log(nums);
+            }
+
+            {
+                function print(){
+                    console.log("hello",this);
+                    a=3;
+
+                }
+
+                //this,argument,super
+                function Exam(){
+                    this.kor = 0;
+                }
+
+                print(); //일반 function으로 호출
+                new print(); //constructor로써 호출
+
+                // var Exam = new Exam();
+            }
+            
+            {
+                function Exam1(){
+                    this.kor = 1;
+                    this.eng = 2;
+                    this.math =3;
+
+                    this.total  = function(){
+                        return this.kor+this.eng+this.math;
+                    }
+                }
+
+                var exam2 = new Exam1();
+                var ftotal = exam2.total;
+
+                console.log(exam2.total(),ftotal());
+
+                //위임을할때 this를 넘겨받지못함
+                console.log(ftotal());
+
+                //6초뒤에넘겨받음
+                // setTimeout(aaa,6000);
+
+                
+            }
+
+            {
+                var y = 30;
+                let x = 30;
+               
+                console.log(x);
+            }
+
+            {
+                let template = `<section></section>`;
+            }
+            
+            
+            
+            {
+                var example=[{kor:30,eng:40},{kor:10,eng:80}];
+                example.sort((a,b)=>a.eng-b.eng);
+                console.log(example);
+            }
+            
+        
     </script>
 </head>
 <body>
