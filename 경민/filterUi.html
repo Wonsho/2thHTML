@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/filterUi.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+</head>
+<body>
+    <main>
+        <div class="filter-container">
+            <h2>필터</h2>
+            
+            <div class="filter-section">
+                <h3>관심분야/카테고리</h3>
+                <select id="category">
+                    <option value="web">웹 개발</option>
+                    <option value="system">시스템 개발</option>
+                    <option value="mobile">모바일 개발</option>
+                    <option value="ai">AI/머신러닝</option>
+                </select>
+            </div>
+        
+            <div class="filter-section">
+            <h3>온/오프라인</h3>
+            <div class="toggle-buttons">
+                <input type="checkbox" id="online" class="toggle-input">
+                <label for="online" class="toggle-label">온라인</label>
+                <input type="checkbox" id="offline" class="toggle-input">
+                <label for="offline" class="toggle-label">오프라인</label>
+            </div>
+            <label><input type="checkbox" name="fulltime"> 전체선택</label>
+            </div>
+        
+            <div class="filter-section">
+            <h3>지역</h3>
+            <div class="region-buttons">
+                <input type="checkbox" id="seoul" class="toggle-input">
+                <label for="seoul" class="toggle-label">서울</label>
+                <input type="checkbox" id="busan" class="toggle-input">
+                <label for="busan" class="toggle-label">부산</label>
+                <input type="checkbox" id="seoul" class="toggle-input">
+                <label for="seoul" class="toggle-label">대구</label>
+                <input type="checkbox" id="busan" class="toggle-input">
+                <label for="busan" class="toggle-label">인천</label>
+                <input type="checkbox" id="seoul" class="toggle-input">
+                <label for="seoul" class="toggle-label">광주</label>
+                <input type="checkbox" id="busan" class="toggle-input">
+                <label for="busan" class="toggle-label">대전</label>
+                <input type="checkbox" id="seoul" class="toggle-input">
+                <label for="seoul" class="toggle-label">울산</label>
+                <input type="checkbox" id="busan" class="toggle-input">
+                <label for="busan" class="toggle-label">세종</label>
+                <input type="checkbox" id="seoul" class="toggle-input">
+                <label for="seoul" class="toggle-label">경기</label>
+                <input type="checkbox" id="busan" class="toggle-input">
+                <label for="busan" class="toggle-label">강원</label>
+                <input type="checkbox" id="seoul" class="toggle-input">
+                <label for="seoul" class="toggle-label">충북</label>
+                <input type="checkbox" id="busan" class="toggle-input">
+                <label for="busan" class="toggle-label">충남</label>
+                <input type="checkbox" id="seoul" class="toggle-input">
+                <label for="seoul" class="toggle-label">전북</label>
+                <input type="checkbox" id="busan" class="toggle-input">
+                <label for="busan" class="toggle-label">전남</label>
+                <input type="checkbox" id="seoul" class="toggle-input">
+                <label for="seoul" class="toggle-label">경북</label>
+                <input type="checkbox" id="busan" class="toggle-input">
+                <label for="busan" class="toggle-label">경남</label>
+                <input type="checkbox" id="seoul" class="toggle-input">
+                <label for="seoul" class="toggle-label">제주</label>
+            </div>
+            <label><input type="checkbox" name="allregions"> 전체선택</label>
+            </div>
+        
+            <div class="filter-section">
+            <h3>수강료</h3>
+            <div class="toggle-buttons">
+                <input type="checkbox" id="free" class="toggle-input">
+                <label for="free" class="toggle-label">전액지원</label>
+                <input type="checkbox" id="paid" class="toggle-input">
+                <label for="paid" class="toggle-label">일부무료</label>
+            </div>
+            <label><input type="checkbox" name="allfees"> 전체선택</label>
+            </div>
+        </div>
+        
+        <div id="web-examples" class="category-examples">
+            <h3>웹개발 예시</h3>
+            <ul>
+            <li>프론트엔드 개발자 양성 과정</li>
+            <li>백엔드 개발자 양성 과정</li>
+            <li>풀스택 웹 개발 부트캠프</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

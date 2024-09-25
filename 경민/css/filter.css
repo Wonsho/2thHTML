@@ -1,0 +1,39 @@
+body{
+    background-color:#ededed;
+    font-family: "Pretendard";
+}
+
+/* main 컬러 */
+/* main{
+    position: relative;
+    background-color: #fff;
+    display: flex;
+} */
+
+main {
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: list-item;
+}
+
+
+#check-btn { 
+    display: none; 
+}
+
+#check-btn:checked~.orders {
+    display: block; 
+} 
+
+.orders { 
+    display: none; 
+}
+
+.text-none{
+    text-indent: -9999px;
+    display: flex;
+    padding: 10px;
+    
+}

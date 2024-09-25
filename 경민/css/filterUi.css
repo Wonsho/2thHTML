@@ -1,0 +1,85 @@
+body{
+    background-color: #ededed;
+    font-family: Pretendard;
+}
+main{
+    margin-top: 285px;
+}
+
+.filter-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  h2, h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  select, input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .toggle-buttons, .region-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .toggle-input {
+    display: none;
+  }
+  
+  .toggle-label {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .toggle-input:checked + .toggle-label {
+    background-color: #3b60ff;
+    color: white;
+  }
+  
+  #category {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #3b60ff;
+  }
+  
+  #web-examples {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  #category:focus ~ #web-examples {
+    display: block;
+  }
+  
+  .category-examples ul {
+    padding-left: 20px;
+  }
+  
+  .category-examples li {
+    margin-bottom: 5px;
+  }
