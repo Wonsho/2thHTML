@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        
+        /*
         {
         var nums = new Array();
         nums[3] = 5;
@@ -309,7 +309,143 @@
                 example.sort((a,b)=>a.eng-b.eng);
                 console.log(example);
             }
+            */
             
+            {
+                let x = 3;
+                let y = 4;
+                let z = 10;
+                let result = x+y;
+
+                let template = `
+                <div>
+                    ${result} = ${x} + ${y};                  
+                </div>
+                `;
+
+                let ss = String.raw`
+                <section>\n\n
+                    ${result} = ${x} + ${z};
+                </section>
+                `;
+
+                console.log(template);
+                console.log(ss);
+            }
+
+
+            //Advanced JSON
+            {
+
+                let kor = 30;
+                let eng = 40;
+                let math = 50;
+                let 약속 = "hehe";
+
+                let exam = {
+                    kor:kor,
+                    eng:eng,
+                    math:math
+                };
+
+                let exams = {kor,eng,math,
+                    total(){
+                        return this.kor+this.eng+this.math;
+                },
+                [약속]:"hello"
+                   
+                
+            };
+
+                console.log(exams);
+                console.log(exams.total());
+                console.log(exams.hehe);
+                
+            }
+
+            {
+            //Object Destructuring(객체 뽀개기) 
+            // function add(obj){
+            //     // let x = obj.x;
+            //     // let y = obj.y;
+            //     let {x,y} = obj;
+                               
+            //     return x+y;                
+            // };
+
+            // let result = add({x:3,y:4});
+            // console.log(result);
+
+            function add({pos:{x:z,y},a=0}){
+                let x = 60;  
+                return x+y+z+a;               
+            };
+
+            let x= 3;
+            let y = 4;
+            let result1 = add({pos:{x,y},z:30,a:3})
+            // let result1 = add({x,y,z:30,a:3});
+            console.log(result1);
+
+            // result1 = add({x,y,z:30});
+            // console.log(result1);
+
+            // result1 = add({x,y,z:30,a:30});
+            // console.log(result1);
+            }
+            
+            {
+                //Array Destructuring
+                function sum(arr){
+                    let [a,,b,,c,d=0,[a1,b1]] = arr;
+                    
+                    return a+b+c+d+b1;
+                }
+                
+                let result = sum([1,2,3,4,5,6,[7,8]]);
+                console.log(result);
+            }
+            
+            {
+                //변수 순서 바꾸기
+                let x = 3;
+                let y = 4;
+                let z = 10;
+                
+                [x,y,z] = [z,y,x];
+                
+                console.log(x,y,z);
+            }
+            
+            {
+                function print(x,y,...aa){
+                    console.log(x,y);
+                    
+                    for(let n of aa)
+                    console.log(n);
+            }
+            print(2,3,4,5,10);
+            let ar = [11,12,13,14,15,16];
+            
+            print(...ar); //spread opreator
+        }
+        
+        
+        
+        
+        //spread operator = r value
+        
+        
+        function createExam(apple,banana,mango){
+            return {apple,banana,mango};
+        }
+
+        let exam = createExam("red","yellow","orange");
+        console.log(exam);
+
+
+
+        
         
     </script>
 </head>

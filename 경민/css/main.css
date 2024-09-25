@@ -7,6 +7,10 @@ body{
     padding: 0; */
 }
 
+.header{
+    border-radius: 5px;
+}
+
 main{
     position: relative;
 }
@@ -198,8 +202,8 @@ section h1{
 .heart{
     /* margin-left: 320px; */
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: -3px;
+    right: 6px;
     color: var(--color-sub-1);
     cursor: pointer;
       
