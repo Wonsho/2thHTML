@@ -1,27 +1,33 @@
 body{
     background-color: #ededed;
     font-family: Pretendard;
+    margin: 0;
+    padding: 0;
 }
 main{
     margin-top: 285px;
 }
 
 .filter-container {
-    max-width: 400px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: none;
+    margin: 0;
     padding: 20px;
     background-color: #fff;
-    border-radius: 20px 20px 0 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    border-radius: 20px 20px 0 0;
   }
   
   h2, h3 {
-    margin-top: 0;
+    margin-top: 10;
     color: #333;
   }
   
   .filter-section {
-    margin-bottom: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   select, input[type="checkbox"] {

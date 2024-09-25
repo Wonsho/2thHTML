@@ -8,7 +8,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,650;1,535&display=swap" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main2.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <link rel="stylesheet" href="css/color.css">
@@ -16,57 +16,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Document</title>
-    
-    <style>
-        *{
-            /* font-family: 'Lora'; */
-            /* font-family: "Pretendard"; */
-        }
-    </style>
-
-    
 </head>
 <body>
     
     <header>
         <div>
-        <h1 class="logo"><a href="main.html">ITDA</a></h1>
-    </div>
-    <div>
-        <a href="login.html" class="login">로그인</a>
-    </div>
+            <h1 class="logo"><a href="main.html">ITDA</a></h1>
+        </div>
+        <div>
+            <a href="login.html" class="login">로그인</a>
+        </div>
     <!-- ------------검색------------------------------ -->
-    <section class="search">
-        <h1>검색</h1>
-            <!-- 텍스트 박스 태두리없애고 배경투명하게함 -->             
-            <form class="search-box" action="">
-                <input class="search-text" type="text">
-                <button class="search-btn" type="submit">
-                    <i class="material-icons">search</i>
-                </button>
-            </input>
-        </form>
-    </section>
+        <section class="search">
+            <h1>검색</h1>
+                <!-- 텍스트 박스 태두리없애고 배경투명하게함 -->             
+                <form class="search-box" action="">
+                    <input class="search-text" type="text">
+                    <button class="search-btn" type="submit">
+                        <i class="material-icons">search</i>
+                    </button>
+                </input>
+            </form>
+        </section>
     <!-- ----------상단바-------------------------------- -->
-    <section class="top-bar">
-        <h1>목록</h1>
-            <button class="nav-text main-list top-bar-filter">필터</button>
-        </a>
-        <a href="#" class="main-list">
-            <span class="nav-text">전체</span>
-        </a>
-        <a href="#" class="main-list">
-            <span class="nav-text">웹개발</span>
-        </a>
-        <a href="#" class="main-list">
-            <span class="nav-text">모바일</span>
-        </a>
-    </section>
+        <div class="section top-bar">
+            <h1>목록</h1>
+            <a href="#filter-container" class="top-bar-filter">필터</a>
+            </a>
+            <a href="#" class="main-list">
+                <span class="nav-text">전체</span>
+            </a>
+            <a href="#" class="main-list">
+                <span class="nav-text">웹개발</span>
+            </a>
+            <a href="#" class="main-list">
+                <span class="nav-text">모바일</span>
+            </a>
+        </div>
     </header>
 
     <!---------------------- 메인-------------------------------- -->
-
-    <main>
+    
+    <main role = "main">
         <div>
             <div class="text-none">filter_list</div>
             <input id="check-btn" type="checkbox">
@@ -189,7 +180,83 @@
         </ul>       
         </section>
 
-        
+        <!---------------------- 필터 추가 -------------------------------- -->
+
+        <div id="filter-container" class="filter-container">
+            <h2>필터 <a href="#" class="close-filter">닫기</a></h2>
+            <div class="filter-section">
+                <h3>관심분야/카테고리</h3>
+                <select id="category">
+                    <option value="">웹개발</option>
+                    <option value="web">웹개발</option>
+                    <option value="mobile">모바일 개발</option>
+                    <option value="ai">AI/머신러닝</option>
+                </select>
+            </div>
+    
+            <div class="filter-section">
+            <h3>온/오프라인</h3>
+            <div class="toggle-buttons">
+                <input type="checkbox" id="online" class="toggle-input">
+                <label for="online" class="toggle-label">온라인</label>
+                <input type="checkbox" id="offline" class="toggle-input">
+                <label for="offline" class="toggle-label">오프라인</label>
+            </div>
+            <label><input type="checkbox" name="fulltime"> 전체선택</label>
+            </div>
+    
+            <div class="filter-section">
+            <h3>지역</h3>
+            <div class="region-buttons">
+                <input type="checkbox" id="seoul" class="toggle-input">
+                <label for="seoul" class="toggle-label">서울</label>
+                <input type="checkbox" id="busan" class="toggle-input">
+                <label for="busan" class="toggle-label">부산</label>
+                <input type="checkbox" id="daegu" class="toggle-input">
+                <label for="daegu" class="toggle-label">대구</label>
+                <input type="checkbox" id="incheon" class="toggle-input">
+                <label for="incheon" class="toggle-label">인천</label>
+                <input type="checkbox" id="gyangju" class="toggle-input">
+                <label for="gyangju" class="toggle-label">광주</label>
+                <input type="checkbox" id="daejeon" class="toggle-input">
+                <label for="daejeon" class="toggle-label">대전</label>
+                <input type="checkbox" id="ulsan" class="toggle-input">
+                <label for="ulsan" class="toggle-label">울산</label>
+                <input type="checkbox" id="sejong" class="toggle-input">
+                <label for="sejong" class="toggle-label">세종</label>
+                <input type="checkbox" id="kyeongki" class="toggle-input">
+                <label for="kyeongki" class="toggle-label">경기</label>
+                <input type="checkbox" id="kangwon" class="toggle-input">
+                <label for="kangwon" class="toggle-label">강원</label>
+                <input type="checkbox" id="choongbuk" class="toggle-input">
+                <label for="choongbuk" class="toggle-label">충북</label>
+                <input type="checkbox" id="choongnam" class="toggle-input">
+                <label for="choongnam" class="toggle-label">충남</label>
+                <input type="checkbox" id="jeonbuk" class="toggle-input">
+                <label for="jeonbuk" class="toggle-label">전북</label>
+                <input type="checkbox" id="jeonnam" class="toggle-input">
+                <label for="jeonnam" class="toggle-label">전남</label>
+                <input type="checkbox" id="kyyngbuk" class="toggle-input">
+                <label for="kyungbuk" class="toggle-label">경북</label>
+                <input type="checkbox" id="kyungnam" class="toggle-input">
+                <label for="kyungnam" class="toggle-label">경남</label>
+                <input type="checkbox" id="jeju" class="toggle-input">
+                <label for="jeju" class="toggle-label">제주</label>
+            </div>
+            <label><input type="checkbox" name="allregions"> 전체선택</label>
+            </div>
+    
+            <div class="filter-section">
+            <h3>수강료</h3>
+            <div class="toggle-buttons">
+                <input type="checkbox" id="free" class="toggle-input">
+                <label for="free" class="toggle-label">전액지원</label>
+                <input type="checkbox" id="paid" class="toggle-input">
+                <label for="paid" class="toggle-label">일부무료</label>
+            </div>
+            <label><input type="checkbox" name="allfees"> 전체선택</label>
+            </div>
+      </div>
     </main>
 
 
@@ -215,8 +282,6 @@
             <i class="material-icons">account_circle</i>
             <span class="nav-text">프로필</span>
         </a>
-      
-
     </nav>
 
 </body>
