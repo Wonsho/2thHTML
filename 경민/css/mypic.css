@@ -1,7 +1,20 @@
+header{
+   
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
 body{
     text-decoration-line: none;
     position: relative;
+    background-color: #ededed;
 }
+
 
 .text-none{
     display: none;
@@ -9,26 +22,85 @@ body{
 
 
 /* 로고 */
-.logo {
-    margin: 20px;
-    font-size: 30px;
+.mypic {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
     font-weight: bold;
     color: #3b60ff;
     cursor: pointer;
-    text-decoration: none;
-     
+    text-decoration: none; 
 }
 
 /* 로그인 */
 .login {
-    
     justify-content: end;
-    margin: -20px 20px;
-    /* left: 350px; */
-   
+    margin: -45px 20px;
     display: flex;
-    text-align: right;
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+
+.accademy-list {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    /* gap: 0px; */
+    /* text-decoration-line: none; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+/* 좋아요 이모티콘 */
+.heart {
+    /* margin-left: 320px; */
+    position: absolute;
+    top: -3px;
+    right: 6px;
+    color: var(--color-main-1);
+    cursor: pointer;
+
+}
+
+.on-off {
+    color: var(--color-main-1);
+    font-weight: bold;
+
+
+}
+
+.subject {
+    font-size: var(--font-size-2);
+    /* color: var(--color-main-3); */
+    color: #333;
+    font-weight: bold;
+}
+
+.cash {
+    color: var(--color-sub-2);
+}
+
+.region {
+    font-size: var(--font-size-0);
+    color: gray;
+
+}
+
+.date {
+    font-size: var(--font-size-0);
+    color: var(--color-sub-1);
+}
+
+section h1 {
+    display: none;
+    background-color: #3b60ff;
 }
