@@ -1,0 +1,308 @@
+/* ===============전체 페이지 스타일================= */
+body{
+    background-color: #f5f5f5;
+}
+
+/* ==========header-style====================== */
+header{
+    min-width: 360px;
+    background-color: white;
+}
+
+
+
+header h1{
+    color: #3F69FF;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+header nav h1{
+    display: none;
+}
+
+header a{
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    margin-right: 10px;
+   
+}
+header input{
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 500px;
+    height: 15px;
+    padding: 8px 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+header button{
+    border: #3F69FF;
+    border-radius: 20px;
+    color: white;
+    background-color: #3F69FF;
+    padding: 8px 15px;
+    margin-right: 10px;
+    white-space: nowrap;
+    
+    
+}
+
+
+header form{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+
+/* :where( */
+    .n-icon\:academy,
+    .n-icon\:commu,
+    .n-icon\:noti,
+    .n-icon\:my-pick,
+    .n-icon\:pencil,
+    .n-icon\:search,
+    .n-icon\:menu,
+    .n-icon\:list1,
+    .n-icon\:autorenew,
+    .n-icon\:arrow_right,
+    .n-icon\:visibility,
+    .n-icon\:comment,
+    .n-icon\:thumbsup
+    /* ) */
+    
+{
+     --icon-width:24px;
+     --icon-color:#3F69FF;
+     --deco-gap:0;
+
+    display: inline-flex;
+    width: var(--icon-width);
+    height: var(--icon-width);
+    /* text-indent: -999px; */
+    overflow: hidden;
+
+    align-items: center;
+    gap: var(--deco-gap);
+}
+
+:where(
+    .n-icon\:academy,
+    .n-icon\:commu,
+    .n-icon\:noti,
+    .n-icon\:my-pick,
+    .n-icon\:pencil,
+    .n-icon\:search,
+    .n-icon\:menu,
+    .n-icon\:list1,
+    .n-icon\:autorenew,
+    .n-icon\:arrow_right,
+    .n-icon\:visibility,
+    .n-icon\:comment,
+    .n-icon\:thumbsup
+)::before{
+     flex-shrink: 0;
+    
+    
+    content: "";
+    display: inline-flex;
+    width: var(--icon-width);
+    height: var(--icon-width);
+    text-indent: -999px;
+    overflow: hidden;
+    background-color: var(--icon-color);
+    background-repeat: no-repeat;
+    mask-size: var(--icon-width);
+    /* margin-top: 30px; */
+}
+
+
+.n-icon\:academy::before{
+    mask-image: url("/image/icon/academy.svg");
+    
+}
+
+.n-icon\:commu::before{
+    mask-image: url("/image/icon/forum.svg");
+    
+}
+
+.n-icon\:noti::before{
+    mask-image: url("/image/icon/notification.svg");
+    
+}
+
+.n-icon\:my-pick::before{
+    mask-image: url("/image/icon/favorite.svg");
+   
+}
+
+.n-icon\:pencil::before{
+    mask-image: url("/image/icon/pencil.svg");
+}
+
+.n-icon\:search::before{
+    mask-image: url("/image/icon/search.svg");    
+}
+.n-icon\:menu::before{
+    mask-image: url("/image/icon/menu.svg");
+}
+.n-icon\:list1::before{
+    mask-image: url("/image/icon/list1.svg");
+}
+.n-icon\:autorenew::before{
+    mask-image: url("/image/icon/autorenew.svg");
+}
+
+.n-icon\:arrow_right::before{
+    mask-image: url("/image/icon/arrow_right.svg");
+}
+
+.n-icon\:visibility::before{
+    mask-image: url("/image/icon/visibility.svg");
+}
+
+.n-icon\:comment::before{
+    mask-image: url("/image/icon/comment.svg");
+}
+
+.n-icon\:thumbsup::before{
+    mask-image: url("/image/icon/thumbsup.svg");
+}
+/* ====size====================================== */
+.n-icon-size\:1,
+.n-icon-size\:small{
+    --icon-width:15px;
+}
+
+.n-icon-size\:2,
+.n-icon-size\:medium,
+.n-icon-size,
+.n-icon-size\:default{
+    --icon-width:24px;
+}
+
+.n-icon-size\:3{
+    --icon-width:32px;
+}
+/* ====color============================= */
+
+.n-icon-color\:main-1{
+    --icon-color: var(--color-main-1, #D86259);
+}
+
+.n-icon-color\:main-2{
+    --icon-color: var(--color-main-1, #353E48);
+}
+
+.n-icon-color\:main-3{
+    --icon-color: var(--color-main-1, #5E2808);
+}
+.n-icon-color\:main-4{
+    --icon-color: var(--color-main-1, white);
+}
+
+.n-icon-color\:sub-1{
+    --icon-color: var(--color-main-1, #F3E184);
+}
+
+.n-icon-color\:accent-1{
+    --icon-color: var(--color-main-1, #334DCF);
+}
+
+/* ====deco============================= */
+.n-deco{
+    width: auto;
+    height: auto;
+    
+}
+
+/* ========deco-gap=================================== */
+.n-deco-gap\:0{
+    --deco-gap:0px;
+}
+
+.n-deco-gap\:1{
+    --deco-gap:5px;
+}
+.n-deco-gap\:2{
+    --deco-gap:10px;
+}
+/* ========deco-pos=================================== */
+.n-deco-pos\:top,
+.n-deco-pos\:bottom{
+    flex-direction: column;
+    height: auto;
+}
+.n-deco-pos\:left::before,
+.n-deco-pos\:top::before{
+    order: unset;
+}
+
+.n-deco-pos\:right::before,
+.n-deco-pos\:bottom::before{
+    order: 1;
+}
+/* =========================================== */
+.n-btn{
+    border: 1px solid var(--color-main-,white);
+    border-radius: 5px 5px 5px;
+    display: inline-flex;
+    padding: 5px 5px 5px 5px;
+}
+
+/* .n-btn.n-icon\:home,
+.n-btn.n-icon\:dashboard{
+    text-indent: -999px;
+    
+} */
+
+.n-btn:is(
+    .n-icon\:academy,
+    .n-icon\:commu,
+    .n-icon\:noti,
+    .n-icon\:my-pick,
+    .n-icon\:search
+):not(.n-deco){
+    text-indent: -999px;
+}
+
+.n-btn.n-btn-color\:main{
+    color:gray;
+    background-color: var(--color-main-1,white);
+    transition: 
+                background-color 1s;
+}
+.n-btn-color\:main:hover{
+    color: black;
+    background-color:white;
+    /* box-shadow: 1px 2px 1px gray; */
+    transform:  translateY(-2px);
+}
+.n-btn-color\:main:hover::before{
+    
+}
+
+/* =====layout====================================== */
+.n-layout{
+    display: flex;
+    justify-content: space-around;
+}  
+
+/* =====font-size====================================== */
+:where(){
+    --font-weight:bold;
+    --font-size:16px;
+    --font-color: #3F69FF
+
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    color: var(--font-color);
+}
+
+.n-font-size\:1{
+    font-weight: bold;
+}

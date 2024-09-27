@@ -1,0 +1,264 @@
+/* ===============전체 페이지 스타일================= */
+body{
+    background-color: #f5f5f5;
+}
+
+/* ==========header-style====================== */
+header{
+    min-width: 360px;
+    background-color: white;
+}
+
+
+
+header h1{
+    color: #3F69FF;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+header nav h1{
+    display: flex;
+    color: black;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+
+header button{
+    border: #3F69FF;
+    border-radius: 5px;
+    color: white;
+    background-color: #3F69FF;
+    padding: 8px 5px;
+    white-space: nowrap;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex; /* Flexbox 사용 */
+    align-items: center; /* 아이콘과 텍스트 수직 정렬 */
+    
+   
+}
+section h1{
+    display: none;
+}
+
+
+
+
+
+ 
+/* =====top-menubar============================= */
+
+
+
+
+.top-menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 100px;
+    color: gray;
+    margin-top: 30px;
+    align-items: center; /* 버튼과 리스트 항목을 수직으로 정렬 */
+    
+    
+}
+/* nav button{
+    border: #3F69FF;
+    border-radius: 20px;
+    color: white;
+    background-color: #3F69FF;
+    padding: 8px 15px;
+    white-space: nowrap;
+    
+
+} */
+
+
+
+.top-menu.top-menu-color\:main{
+    color:gray;
+    background-color: var(--color-main-1,white);
+    transition: 
+                background-color 1s;
+}
+.top-menu-color\:main:hover{
+    color: #3F69FF;
+    background-color:white;
+    /* box-shadow: 1px 2px 1px gray; */
+    transform:  translateY(-2px);
+}
+
+
+.btn-layout{
+    display: flex;
+    align-items: center;
+}
+
+.btn-group{
+    display: flex;
+    margin-left: auto;
+}
+
+
+
+.btn-style{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+
+.btn-style-main{
+    border: 1px solid #f5f5f5;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+    
+}
+.danda-group{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+.a-style-main{
+    font-weight: bold;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+
+.commu-style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.commu-list{
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    border: 1px solid #828282;
+    border-radius: 5px;
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.commu-img{
+    border: 1px solid white; /* 테두리 스타일 */
+    border-radius: 60px;
+    width: 50px; /* 원하는 너비 설정 */
+    height: 50px; /* 원하는 높이 설정 */
+    background-image: url("/image/icon/dog.avif"); /* 배경 이미지 설정 */
+    background-size: cover; /* 이미지 크기 조절 */
+    background-position: center; /* 이미지 중앙 정렬 */
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.commu-img2{
+    border: 1px solid white; /* 테두리 스타일 */
+    border-radius: 60px;
+    width: 50px; /* 원하는 너비 설정 */
+    height: 50px; /* 원하는 높이 설정 */
+    background-image: url("/image/icon/cat.jpg"); /* 배경 이미지 설정 */
+    background-size: cover; /* 이미지 크기 조절 */
+    background-position: center; /* 이미지 중앙 정렬 */
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.commu-item1{
+    position: relative;
+    bottom: 50px;
+    left: 85px;
+    display: inline-block;
+    border: 1px solid #3F69FF;
+    border-radius: 10px;
+    background-color: #3F69FF;
+    padding: 2px 2px;
+    color: white;
+    font-size: 12px;
+}
+
+.commu-item2{
+    position: relative;
+    bottom: 50px;
+    left: 85px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.commu-item3{
+    position: relative;
+    bottom: 95px;
+    left: 370px;
+    font-size: 12px;
+    color: gray;
+}
+
+.commu-item4{
+    position: relative;
+    bottom: 40px;
+    left: 30px;
+    font-size: 12px;
+    color: gray;
+}
+
+.commu-item5{
+    position: relative;
+    bottom: 60px;
+    left: 270px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.commu-item6{
+    position: relative;
+    bottom: 60px;
+    left: 270px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.commu-item7{
+    position: relative;
+    bottom: 60px;
+    left: 270px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.commu-item8{
+    position: relative;
+    bottom: 40px;
+    left: 263px;
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+}
+
+.commu-item9{
+    position: relative;
+    bottom: 54px;
+    left: 300px;
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+}
+
+.commu-item10{
+    position: relative;
+    bottom: 68px;
+    left: 350px;
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+}
+
+
+
