@@ -4,21 +4,14 @@ body{
     margin: 0;
     padding: 0;
 }
-/* main{
+main{
     margin-top: 285px;
-} */
+}
 
 .filter-container {
-<<<<<<< HEAD
-    /* position: relative;
-    z-index: 4;     */
-    
-    max-width: 400px;
-=======
     width: 100%;
     max-width: none;
     margin: 0;
->>>>>>> 7291a966bbdb40e432f4758c515f93056a4aafab
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);

@@ -12,9 +12,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-i:hover{
-    color: var(--color-main-1);
-}
 
 header {
     display: flex;

@@ -116,8 +116,6 @@ section h1{
 
 .main-list:hover{
     color: #334DCF;
-    text-decoration: underline;
-    text-decoration-line: 10px;
 }
 
 .top-bar-filter {
@@ -125,16 +123,11 @@ section h1{
     border-radius: 20px;
     background-color: #3b60ff;
     color: #ddd;
-    padding: 10px 25px;  
-    text-align: center;
-    align-items: center;
-    width: 120px;
-    /* 좌우 패딩 약간 증가 */
-    margin-left: 0px;
+    padding: 5px 10px;  /* 좌우 패딩 약간 증가 */
+    margin-left: 20px;
     cursor: pointer;
-    
-    /* text-decoration: none;  링크 밑줄 제거 */
-    /* display: inline-block;  인라인 블록으로 변경 */
+    text-decoration: none;  /* 링크 밑줄 제거 */
+    display: inline-block;  /* 인라인 블록으로 변경 */
     transition: all 0.3s ease;  /* 부드러운 전환 효과 */
 }
 
@@ -165,22 +158,21 @@ section h1{
     transform: translateY(-2px);
 }
 
-.order-list {
+.order-list{
     padding-top: .25rem;
     padding-bottom: .25rem;
     border: 0.2px solid #dadada;
     border-radius: 10px;
     width: 30%;
-    height: 110px;
-    background-color: #fff;
-    position: absolute;
-    z-index: 2;
-    top: 45px;
-    right: 0;
-
+    height: 100px;
+   background-color: #fff;
+   position: absolute ;z-index: 2; 
+   top: 45px;
+   right: 0;
+     
 }
 
-.order-lists {
+.order-lists{
     display: flex;
     position: sticky;
     width: 100%;
@@ -188,9 +180,9 @@ section h1{
     border: 0;
     background-color: transparent;
     padding: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
     cursor: pointer;
-
+    
 }
 
 .order-lists:hover{
