@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="css/community.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="cm.js"></script>
 
     <title>Document</title>
 
     <style>
         *{
-            
             font-family: "Pretendard";
         }
     </style>
@@ -27,11 +27,11 @@
     <header>
         <section class="header-list">
             <h1>ITDA</h1>
-            <!-- <div >
-                <button class="material-icons back">
+            <div >
+                <button class="material-icons back btn-none">
                     <a href="" class="material-icons">arrow_back</a>
                 </button>
-            </div> -->
+            </div>
             <div class="logo">
                 <a href="">ITDA</a>
             </div>
@@ -47,16 +47,25 @@
             <h1 class="text-none">게시글</h1>
             <header>
                 <div class="bd-head">
+                    <!-- 더보기 버튼 -->
                     <span class="bd-title">게시물제목</span>
-                    <button class="add btn-none">
-                        <i class="material-icons">more_horiz</i>
-                    </button>
-                </div>
+                        <label id="btn2" onclick='addBtn()' class="material-icons add">more_horiz</label>
                 <div class="bd-sub">
                     <span>닉네임</span>
                     <span>5 분 전</span>
                     <span>조회 15</span>
                 </div>
+                    <div class="add-box">
+                        <span id='btn1'>
+                            <a href="">수정</a>
+                        
+                            <a href="">삭제</a>
+                        
+                            <a href="">신고</a>   
+                         </span>
+                    </div>
+                </div>
+               
         </header>
         <!----------- 게시물 ----------------->
         <article>
@@ -71,7 +80,7 @@
         </article>
         <div class="rec">
             <button class="rec-btn">
-                <i class="material-icons rec-icon">thumb_up</i>
+                <i img src="/css/image/icon/thumbs_up.svg"></i>
                 <span class="rec-count">21</span>
             </button>
         </div>
@@ -82,82 +91,67 @@
             <div class="c-count">댓글 20 개</div>
             <div>
             <ul>
-                <li class="comment-box">
-                    <div class="cm-header">
-                        <span class="nickname">닉네임</span>
-                        <span>20 분 전</span>
+              <li class="comment-box">
+                <div class="cm-pd">
+                <div class="cm-header">
+                        <span class="nickname cc">닉네임</span>
+                        
                         <div class="function">
                         <span>
                             <a href="">신고</a>
                         </span>
                         <span>
-                            <a href="">수정</a>
-                        </span>
-                        <span>
                             <a href="">삭제</a>
-                        </span>                      
+                        </span>
+                        <span>             
                             <a href="">댓글</a>
-                        </div>                      
+                        </span>   </div>                   
                     </div>
-                    <div>
-                        그냥 div태그입니다
-                        p태그 아닙니다
                     </div>
-                </li>
+                <div>
+                    댓글작성중입니다 댓글작성중이에요
+                </div>
+                <div class="cm-time">
+                    20 분 전
+                </div>
+            </li>
 
             <!----------- 대 댓글 ----------------->
             <li class="comment-box">
+                <div class="cm-pd">
+                <i class="material-icons">subdirectory_arrow_right</i>
+               
                 <div class="cm-header">
-                    <i class="material-icons">subdirectory_arrow_right</i>
-                    <span class="nickname cc">닉네임</span>
-                    <span>20 분 전</span>
-                    <div class="function fc">
-                    <span>
-                        <a href="">신고</a>
-                    </span>
-                    <span>
-                        <a href="">수정</a>
-                    </span>
-                    <span>
-                        <a href="">삭제</a>
-                    </span>                      
-                        <a href="">댓글</a>
-                    </div>                      
+                        <span class="nickname cc">닉네임</span>
+                        <div class="function">
+                        <span>
+                            <a href="">신고</a>
+                        </span>
+                        <span>
+                            <a href="">삭제</a>
+                        </span>
+                        <span>             
+                            <a href="">댓글</a>
+                        </span>   </div>                   
+                    </div>
+                    </div>
+                <div class="cm-cm">
+                    <span>@태그명</span>
+                    <span>대댓글 작성입니다</span>
                 </div>
-                <div>
-                    대댓글 작성입니다
+                <div class="cm-time">
+                    20 분 전
                 </div>
             </li>
-            <li class="comment-box">
-                <div class="cm-header">
-                    <span class="nickname">닉네임</span>
-                    <span>20 분 전</span>
-                    <div class="function">
-                    <span>
-                        <a href="">신고</a>
-                    </span>
-                    <span>
-                        <a href="">수정</a>
-                    </span>
-                    <span>
-                        <a href="">삭제</a>
-                    </span>                      
-                        <a href="">댓글</a>
-                    </div>                      
-                </div>
-                <div>
-                    그냥 div태그입니다
-                    p태그 아닙니다
-                </div>
-            </li>
-            </ul>
-        </div>
+
+            
+           
         <div class="count">
             <span class="page-count">
                 <a href="">
                     <i class="material-icons c-icon">keyboard_arrow_left</i>
                 </a>
-                <a href="" class="num">1</a>
+                <a href="">1</a>
                 <a href="">2</a>
                 <a href="">3</a>
                 <a href="">4</a>
@@ -200,7 +194,7 @@
             <span class="nav-text">홈</span>
         </a>
         <a href="mypic.html" class="nav-link">
-            <i class="material-icons">favorite</i>
+            <i class="material-icons">bookmark</i>
             <span class="nav-text">마이픽</span>
         </a>
         <a href="mypage.html" class="nav-link">
