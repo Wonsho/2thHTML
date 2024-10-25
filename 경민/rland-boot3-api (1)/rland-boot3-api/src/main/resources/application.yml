@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev #dev
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+server:
+  servlet:
+    context-path: /api/v1

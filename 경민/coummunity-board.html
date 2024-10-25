@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/icon.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/community.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/community-board.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-    <script src="cm.js"></script>
-
+    <script src="../js/cm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/bottom.css">
     <title>Document</title>
 
     <style>
@@ -48,12 +49,12 @@
             <header>
                 <div class="bd-head">
                     <!-- 더보기 버튼 -->
-                    <span class="bd-title">게시물제목</span>
+                    <span class="bd-title">게시물 제목</span>
                         <label id="btn2" onclick='addBtn()' class="material-icons add">more_horiz</label>
                 <div class="bd-sub">
-                    <span>닉네임</span>
                     <span>5 분 전</span>
                     <span>조회 15</span>
+                    <span>닉네임</span>
                 </div>
                     <div class="add-box">
                         <span id='btn1'>
@@ -64,6 +65,7 @@
                             <a href="">신고</a>   
                          </span>
                     </div>
+                   
                 </div>
                
         </header>
@@ -80,7 +82,8 @@
         </article>
         <div class="rec">
             <button class="rec-btn">
-                <i img src="/css/image/icon/thumbs_up.svg"></i>
+              <!-- <i class="fa-regular fa-thumbs-up fa-2x"></i> -->
+               <i><img src="css/image/icon/thumbs_up.svg" alt=""></i>
                 <span class="rec-count">21</span>
             </button>
         </div>
@@ -175,13 +178,13 @@
                 </label>   
             </form>
             </div>
+            
        
       </main>
 
     <!----------- 하단바 ----------------->
-
-      <nav class="nav">
-        <a href="coummunity.html" class="nav-link link-active">
+    <nav class="nav">
+        <a href="coummunity.html" class="nav-link">
             <i class="material-icons">chat</i>
             <span class="nav-text">커뮤니티</span>
         </a>
@@ -189,7 +192,7 @@
             <i class="material-icons">edit</i>
             <span class="nav-text">국비학원</span>
         </a>
-        <a href="main.html" class="nav-link">
+        <a href="main.html" class="nav-link link-active">
             <i class="material-icons">home</i>
             <span class="nav-text">홈</span>
         </a>
@@ -197,10 +200,11 @@
             <i class="material-icons">bookmark</i>
             <span class="nav-text">마이픽</span>
         </a>
-        <a href="mypage.html" class="nav-link">
+        <a href="login.html" class="nav-link">
             <i class="material-icons">account_circle</i>
-            <span class="nav-text">로그인</span>
-        </a>  
+            <span class="nav-text">프로필</span>
+        </a>
     </nav>
+</nav>
 </body>
 </html>

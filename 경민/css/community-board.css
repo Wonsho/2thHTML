@@ -17,7 +17,7 @@
 body{
     /* margin: 20px; */
     >header{
-        border-bottom: 1px solid var(--color-sub-4);
+        border-bottom: 1px solid var(--color-main-1);
         margin: 20px;
         >section{
 
@@ -39,7 +39,7 @@ body{
 
 /* 헤더 뒤로가기아이콘 */
 .back{
-    margin-right: 20px;
+    /* margin-right: 20px; */
     padding-top: 10px;
     flex-grow: 1;
 }
@@ -89,15 +89,12 @@ body{
 
 /* 더보기 목록 */
 .add-box{
-    box-sizing: auto;
-    /* border: 1px solid var(--color-sub-4); */
-    /* display: flex; */
-    /* float: right; */
-    display: flex; z-index: 2;
+    margin-top: -20px;
+    display: flex; 
 }
 
 .add-box span{
-    border: 1px solid var(--color-sub-4);
+    border: 1px solid var(--icon-color-bottom);
     margin-top: -20px;
     padding: 5px;
     border-radius: 5px;
@@ -108,7 +105,11 @@ body{
 
 /* 게시물 서브 리스트 */
 .bd-sub{
-    color: var(--color-sub-4);
+    color: var(--icon-color-bottom);
+}
+
+.bd-sub span:nth-child(3){
+    display: flex;
 }
 
 /* 게시물이미지 배경 크기 */
@@ -134,8 +135,8 @@ body{
 
 /* 추천 아이콘 박스 */
 .rec-btn{
-    border: 1px solid var(--color-sub-4);
-    background-color: var(--color-main-3);
+    border: 1px solid var(--color-text-hidden);
+    background-color: var(--detail-color-main-3);
     border-radius: 5px;
     cursor: pointer;
 }
@@ -145,15 +146,6 @@ body{
     color: var(--color-main-3);
     background-color: var(--color-main-1);
 }
-
-/* 추천 아이콘 위치 */
-.rec-icon{
-    /* margin: 0px 5px;
-    float: left;
-     */
-}
-
-
 
 /* 추천수 */
 .rec-count{
@@ -171,14 +163,14 @@ body{
 
 /* 댓글수 */
 .c-count{
-    border: 1px solid var(--color-sub-4);
+    border: 1px solid var(--color-text-hidden);
     border-radius: 5px;
     padding: var(--padding-2);
 }
 /* 댓글박스 */
 .comment-box{
     padding:5px 0px 20px 0px;
-    border-bottom: 1px solid var(--color-sub-4);
+    border-bottom: 1px solid var(--color-text-hidden);
 
 }
 
@@ -192,7 +184,7 @@ body{
 /* 댓글 헤더 */
 .cm-header{
     margin-bottom: var(--margin-1);
-    color: var(--color-sub-4);
+    color: var(--detail--color-sub-6);
     font-size: var(--font-size-0);
 }
 
